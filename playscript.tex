@@ -1,0 +1,495 @@
+% http://www.ctan.org/tex-archive/macros/latex/contrib/memoir
+\documentclass[11pt,a4paper,oneside]{memoir}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% http://www.ctan.org/tex-archive/macros/latex/contrib/enumitem
+\usepackage{enumitem}
+\usepackage{epigraph}
+% Without this, the title page will not compile correctly.
+\newlength{\drop}
+% To avoid using drop, see: http://wiki.lyx.org/LyX/UsingMemoirInLyX
+
+% See p92 of the Memoir manual.
+\chapterstyle{demo2}
+
+\pagestyle{myheadings}
+
+\setlength{\parindent}{0pt}
+
+% Set the title of the contents page.
+\renewcommand{\printtoctitle}[1]{\centering\Large\bfseries Acts}
+% Remove the title from the contents page entirely.
+% \renewcommand{\printtoctitle}[1]
+
+% Remove page numbers until told otherwise.
+\pagenumbering{gobble}
+
+% Various title pages may be used with the memoir package.  The one
+% below is from ``Some Examples of Title Pages'' (Peter Wilson) at
+% http://www.ctan.org/tex-archive/info/latex-samples/TitlePages.
+
+% Set up the title page.
+% Gentle Madness title page style
+\newcommand*{\titleGM}{\begingroup
+  \drop = 0.1\textheight
+  \vspace*{\baselineskip}
+  \vfill
+  \hbox{%
+    \hspace*{0.2\textwidth}%
+    \rule{1pt}{\textheight}
+    \hspace*{0.05\textwidth}%
+    \parbox[b]{0.75\textwidth}{
+      \vbox{%
+        % Main title of the play
+        \vspace{\drop}{\noindent\HUGE\bfseries The Resume}\\
+        % \vspace{\drop}{\noindent\HUGE\bfseries
+        % Title of the play \\[0.5\baselineskip] over two lines}\\
+        % Subtitle of the play
+        [2\baselineskip]{\huge\itshape A Farce}\\
+        % [2\baselineskip]{\Large\itshape Subtitle of the play \\
+        % [0.5\baselineskip] over two lines}\\
+        % Author of the play
+        [4\baselineskip]{\Large Oleg Yevgenievich Sivokon}
+        \par\vspace{0.5\textheight}
+        % [4\baselineskip]{\Large First Author \\
+        % [0.5\baselineskip] Second Author \\
+        % [0.5\baselineskip] Third Author \\}\par\vspace{0.5\textheight}
+        % Publisher and year of publication
+        {\noindent \textbf{Oleg Y. Sivokon}\\
+          [0.5\baselineskip] \textbf{2013}\\
+          [0.5\baselineskip] \itshape Born: 23.06.1978\\
+          [0.5\baselineskip] \itshape Cell phone: +972 (0)544563314\\
+          [0.5\baselineskip] \itshape Electronic mail: olegsivokon@gmail.com \\
+          [0.5\baselineskip] \itshape Address: Florentin 50, Tel Aviv, Israel}\\
+        [\baselineskip]
+      }% end of vbox
+    }% end of parbox
+  }% end of hbox
+  \vfill
+  \null
+  \endgroup}
+
+\begin{document}
+
+\epigraph{No, I'm not interested in developing a powerful brain. All
+  I'm after is just a mediocre brain, something like the President of
+  the American Telephone and Telegraph Company.}{Alan Turing}
+
+\clearpage
+% Print out the title page.
+\titleGM
+
+% Start numbering pages with Roman numerals (for the front matter).
+\pagenumbering{roman}
+
+% Print out the contents page, listing the acts of the play.
+% You will need to run pdflatex twice before the page numbers show up.
+\tableofcontents*
+\clearpage
+
+% Print out the characters page, listing the dramatis personae
+% The starred form of \chapter prevents a chapter number
+% (eg ``One'', ``Two'') being printed before each chapter title
+% (eg ``Characters'', ``Act 1'').
+\chapter*{CHARACTERS}
+% Centre the list of characters.
+% Comment out this line and \end{}center if centring is not desired.
+\begin{center}
+  \textbf{Oleg}, the interviewed, I\\
+  \textbf{Ronen}, the interviewer, a chief programmer of a gambling company\\
+  \textbf{Shira}, the interviewer, a human resources expert\\
+  \vskip 1cm
+
+  \textbf{Scene}: Oleg's room.\\
+  \textbf{Time of action}: Early morning.
+\end{center}
+
+% Print out a page with any additional authorial comments,
+% notes on staging, or whatever.
+\chapter*{THE PLOY}
+
+% Set up a description list to hold the paragraphs.
+% Increase the space between the list items, and set
+% the left margin to 0.20cm
+\begin{description}[itemsep=1ex,leftmargin=0.20cm]
+
+  % Precede each paragraph with an empty \item[].
+\item[] The events you are about to witness took place when the
+  narrator himself experienced them. This play is a true and honest
+  report from the field of head hunting in programming industry.
+
+\item[] The author admits to visiting of at least thirty job
+  interviews in the last fiscal year only, thus collecting the
+  experience required to compile this play.
+
+\item[] Readers are expected to be familiar with the job interviewing
+  process. Basic understanding of philosophy, set theory, category
+  theory, algebra, theoretical computer science, artificial
+  intelligence, theory of mind, folk psychology, computational
+  linguistics and formal languages may be instrumental.
+
+\end{description}
+
+\clearpage
+% Start numbering pages with Arabic numerals (for the text of the play).
+\pagenumbering{arabic}
+
+% Generate a running header with the title of the play.
+\markright{\textsc{The Resume}}
+
+%%%%%%%%%%%%%%%% 
+\chapter*{ACT 1}
+%%%%%%%%%%%%%%%% 
+% The \chapter* will prevent the the chapters (Acts) being listed in
+% the table of contents, so we need to add them manually.
+\addcontentsline{toc}{chapter}{Act 1}
+
+% The starred form of \section prevents a section number
+% (eg ``1.1'', ``2.3'') being printed before each section
+% title (eg ``Scene 1'', ``Scene 2'').
+\section*{\hfill\textit{scene 1}}
+% \section*{\hfill\textit{SCENE 1}}
+% Use this line instead if you want the Scene 1 heading shifted to
+% the right edge of the page.
+
+% Set up a description list to hold the dialogue of the scene.
+% Increase the space between the list items, and set the left
+% margin to 1cm.
+\begin{description}[itemsep=1ex,leftmargin=1cm]
+
+  % Where the scene or act begins with stage directions:
+\item[] \hfill \\
+  \textit{Semi-lit untidy small room. Oleg sists in front of his
+    computer peering at the mail accumulated during the night. The phone
+    rings.}
+
+  % Where the scene or act begins with dialogue, and no stage directions:
+  % \item[] \hfill
+
+  % Wrap each character's name in \item[].
+  % Wrap in-dialogue directions in \textit{}
+\item[Oleg] \textit{(faking enthusiasm)} Hello!
+
+\item[Oleg] Yes, it is still relevant.
+
+\item[Oleg] Yes, it is convenient to talk now.
+
+\item[Oleg] \textit{(after a long pause)} You see, it's a loaded
+  question... Actually, you know what, I wouldn't mind answering it
+  in-depth, but I'm afraid you will find it teditious to follow.
+  I've been told I can sound condescending when I need to explain
+  myself. I have to confess that I am, some times, when I...
+
+\item[Oleg] Yes, yes, I see.
+
+\item[Oleg] See-es-es three? Yes.
+
+\item[Oleg] Ech-tee-em-el five? Why, of course...
+
+\item[Oleg] Since... since... well, you see it's hard to answer. The
+  format itself didn't change that much since its very early version.
+  So, I guess...
+
+\item[Oleg] OK, never mind. Make it f-f-five, three years. Yes, three.
+
+\item[Oleg] \textit{(after yet another pause)} I'm sorry, I don't
+  think I ever mentioned that. Come again please?
+
+\item[Oleg] El-eye-es-pee? A language? A programming language that I
+  know? Wait, that can't be right... Oh, I see now. Well, scratch
+  that. It's a technical thing, you don't need to know.
+
+\item[Oleg] No, no, never mind. No one would search for a Lisp
+  programmer. It's like in that Dillbert comic...
+
+\item[Oleg] Dillbert, who's Dillbert? Well, just never mind it then.
+  It's not important really.
+
+\item[Oleg] Yes, thank you, have a nice day! I'll let you know if
+  they contact me.
+
+  % Close the description list at the end of the scene.
+\end{description}
+\vskip 1cm  % Put a bit of space between this and the next scene heading.
+
+\section*{\hfill\textit{scene 2}}
+\begin{description}[itemsep=1ex,leftmargin=1cm]
+
+  % Where the scene or act begins with dialogue, and no stage directions:
+\item[] \hfill \\
+  \textit{Same room. Oleg sists in front of his computer peering at
+    the mail accumulated during the day. The phone rings.}
+
+\item[Oleg] \textit{(faking enthusiasm)} Hello!
+
+\item[Oleg] Yes, the HR people warned me.
+
+\item[Oleg] Do you have my e-mail?
+
+\item[Oleg] Great.
+
+\item[Oleg] Yes, any time really, I'm not doing anything important
+  this week.
+
+\item[Oleg] No, I don't do anything imporatnt the next week either.
+
+\item[Oleg] Yes, I'll send you a confirmation in a moment.
+
+\item[Oleg] So Tuesday at eleven? Great.
+
+\item[Oleg] Me too.
+
+\end{description}
+\vskip 1cm
+
+
+%%%%%%%%%%%%%%%% 
+\chapter*{ACT 2}
+%%%%%%%%%%%%%%%% 
+\addcontentsline{toc}{chapter}{Act 2}
+
+% The \hfill will shift the scene heading to the right edge of the page.
+\section*{\hfill\textit{scene 1}}
+\begin{description}[itemsep=1ex,leftmargin=1cm]
+  \setlength{\parskip}{5pt}
+
+\item[] \hfill \\
+  \textit{At Ronen's office.}
+
+\item[Ronen] \textit{(faking a smile)} I've read your resume, and may
+  I say it is strange! Why on Earth would you make it a dialogue?
+
+\item[Oleg] \textit{(smiling mordantly)} Oh really, have you read it?
+  Most people in your position won't make it past the front page.
+
+\item[Ronen] Yes, I only took a glimps of the first part, but now that
+  you mention it, let me...
+
+\item[Oleg] I wouldn't do it if I were you.
+
+\item[Ronen] ???
+
+\item[Oleg] Well, you see, it is a paradox. No. It is actually a gamble.
+  Do you like to gamble?
+
+\item[Ronen] \textit{(still faking a smile)} Seriously?
+
+\item[Oleg] You have a one in two chance of never finishing to read the
+  resume, if you consider the following proposition:\\
+  Say, and the resume is fake, and it doesn't describe our meeting as
+  truthfully and honestly as it had declared already--then you loose
+  nothing. Perhaps, you might have a good laugh and that would be all
+  of it.\\
+  But I dare you to consider a morbid possibility of the resume delivering
+  on its promise! What if you were to read about how you would read
+  the resume, and then you would read about how you reflected upon what
+  you read and then you would read about how you reflected upon your
+  reflection--do you see the problem?
+
+\item[Ronen] \textit{(boldly rummages through the pile of papers on
+    his desk)} Hmmm... that would be... recursive?
+
+\item[Oleg] As a matter of fact--no. It would be infinite. Recusions
+  have a termination condition, however in general, you can't prove
+  that an operation is recursive, because you can't guarantee that
+  the termination condition will be ever reached.\\
+  Remeber Alan Turing?--Yes, like that.
+
+\item[Ronen] \textit{(never finding the resume)} OK. To hell with it.
+  So would you mind telling me about yourself?
+
+\item[Oleg] Should I start from the most recent and go back to the
+  beginning, or should I keep the chronologic order?
+
+\item[Ronen] Whatever, it doesn't matter.
+
+\item[Oleg] Oh, it sure does. Remember the previous problem? It has
+  been noticed by Korzybski that in order to exchange the knowledge
+  we must find the relevant patches of the territory in both of our
+  brains, such as to ensure understanding.\\
+  And let me tell you that if we start from today and go all the
+  way back into the past, then you might find it easier to understand
+  who are you talking to, but experiencing events in reverse order
+  may not be the easiest way to proceed.\\
+  On the other hand, watching the evnets unfold in the same order
+  they happened is the easiest way, but you will have to start with
+  a very wrong image of me and you will have to evolve it with the
+  story.\\
+  Also, my intuition hints me that you will be anxcious to quit
+  listenning. Thus, it is in my best interest to go backwards in
+  time--whilst it's the opposite for you.
+
+\item[Ronen] OK, reverse. No, whatever. \textit{(looks at his iPhone)}
+
+\item[Oleg] I think I have just the story for you!
+
+\item[Ronen] Yes, that's better.
+
+\item[Oleg] I interviewed for a similar position at the start-up
+  company. The interviewer, who was, coincidentally, called Ronen,
+  had me explain him object-oriented design. He was unconvinced by
+  me referencing Ostersky as an authority on \textit{vObject calculus},
+  instead he opted for a thought experiment.\\
+  ``Tell me, Oleg, how would you program an elevator?''--inquired he.\\
+  ``I should warn you, I don't see how objects come into play here,
+  but it would be my pleasure to explain it to you, but you need to
+  be more exact: please explain, how do you want the elevator to operate?''\\
+  \textit{Ronen was starting to get anxcious}\\
+  ``What's the matter? It's just an elevator, like every other elevator!''\\
+  ``Do you want an efficient or a fair elevator?''\\
+  ``Is there a difference?''--Ronen was already about to loose his temper.\\
+  ``Efficient elevators accomplish their task faster, but they may appear
+  frustrating to the passengers.''\\
+  ``Efficient.''\\
+  ``Great. How many elevators are there in the building? Should they be
+  aware of each other?''\\
+  ``Just a generic elevator. It doesn't matter how many of them are in
+  the building. I just need you to write the program in pseudocode''--Ronen
+  was trying to get the answer he wanted, not realizing how flawed the
+  question was.\\
+  ``Then pseudocode be it!''--that said, I took a shit of paper and began
+  to draw.\\
+  ``So... let's define our elevator in terms of what it does: it can
+  move up, let's call it a `U'; down shall be `D'; `L' for load and
+  `N' for noop''\\
+  ``We shall measure the efficiency of the elevator in the number of passengers
+  delivered over time--that sounds fair, does it?''\\
+  ``Yes, just move on.''--muttered Ronen.\\
+  ``Here's our very simple program then:''\\
+\begin{verbatim}
+LUUUUUUUUUULDDDDDLDDL
+\end{verbatim}
+  ``Which reads as follows: pick up a passenger, move ten floors up, unload
+  the passenger, move five floors down, pick another passenger, move yet
+  two more floors down and unload the passenger. The total score of
+  $21/2=10.5$--This elevator is fair, but inefficient.''\\
+  ``What's inefficient about it?''--grunted Ronen.\\
+  ``Oh, wait till you see another program!''\\
+\begin{verbatim}
+LUUUUULDDLUUUUUL
+\end{verbatim}
+  ``Do you see how it's efficiency is $16/2=8$? Ever wondered why no real
+  elevators operate like that?''\\
+  Ronen was clearly disappointed by the turn of events. He didn't want to
+  count the ``U''s and ``D''s in my program, instead he told me:\\
+  ``I don't care if it's efficient or not, it is not what I wanted to know.
+  If I wanted an efficient elevator, I'd pay a professor to write an algorithm
+  to do it.''\\
+  ``Well, if such is the case, I'd rather work for the professor you hire,
+  then for you. I was under impression I'm intervieweing for programmer's
+  position.''\\
+  We shook hands and never spoke again.
+
+\item[Ronen] And the moral of the story?.. is that you can't cooperate?
+
+\item[Oleg] The way you pose the question reminded me of just another
+  story...
+
+\item[Ronen] Please, no more stories.
+
+\item[Oleg] Allright, I'll go right for the moral then. Have you ever
+  heard about fuzzy logic? Let me give you an example:\\
+  \begin{adjustwidth}{24pt}{16pt}
+  \textit{All John's children are bald.}\\
+  \end{adjustwidth}
+  If you choose any first order logic, you are not be allowed to infer
+  any of the following, however it might feel natural to you to do so:\\
+  \begin{enumerate}
+  \item John may not be three years old. \textit{John doesn't need to be
+      a human.}
+  \item John has children. \textit{In case John doesn't have children,
+      the proposition above is still true.}
+  \end{enumerate}
+  Or, here is another example, proposed by Austin:\\
+  \begin{adjustwidth}{24pt}{16pt}
+    \textit{Suppose I order a cage from a carpenter. Suppose I tell the
+      carpenter that the cage is for my bird. The carptenter makes a
+      cage with the roof. If I then sue the carptenter, arguing that since
+      my bird is a penguin he should not have the roof attached to the cage,
+      thus he should not charge me for the extra work--I will certainly
+      loose, because in the common practice an illogical, but a very likely
+      condition is believed to be true.\\}
+  \end{adjustwidth}
+  To contrast humans, modern computers don't tolerate fuzzy logic.
+  A program is believed to be flawless, when it covers all and every possible
+  case of its usage. Programmers, thus, are required to be fluent in low-order
+  logics in order to talk to computers.\\
+  In the same way, you shouldn't extrapolate the example to include yourself
+  unless you are confident that you would have behaved the same way
+  \textit{the other} Oren did.
+
+\item[Ronen] Are you a robot? \textit{(he tried not to look confused, but
+    he was certanily working his way towards the end of the interview.)}
+
+\item[Oleg] This is an interesting question. Of course I don't intend to
+  take it literally, because in the very broad sense, not only I, but you,
+  your cat and the flees in your cat's fur are robots...
+
+\item[Ronen] My cat?
+
+\item[Oleg] Sorry. \textit{I didn't mean it literally.} Hope you don't
+  mind it if I continue?
+
+\item[Ronen] Not at all.
+
+\item[Oleg] There is a naive belief that robots are different from humans
+  in that they don't mind repetitive tasks. This must owe to the fact
+  that computers, those which operate robots, must be serial, whilst
+  humans are massively parallel. The world is parallel too. So robots
+  are, in a sense, out of this world, a kind of lunatics.\\
+  There is, however, a thrilling contradiction in this observation!
+  There are other outstanding traits non-robot humans share. I hope
+  you will agree with this list:
+  \begin{enumerate}
+  \item Robots are unlikely to marry, to have a family or to even
+    participate in any of the social interactions potentially
+    leading to reproduction. Robots don't see the point of continuing
+    their kind through replication.
+  \item Robots are very unlikely to make mistakes. In fact, a mistake
+    may upset the robot so much, it might burn out and explode whilst
+    trying to cope with it. Humans, on the contrary, welcome mistakes,
+    believing mistakes to be their true nature.
+  \item Robots take no interest in sports, arts or non-traditional
+    medicine, because they generally don't engage in mindless activites.
+    To contrast that, humans would go to war for things like religion,
+    art or to support their hometown football team.
+  \item Robots don't value food. Actually, they abhore everything that
+    could have them distracted while performing their sole task--since
+    as we already mentioned, robots are single-threaded serial beings.
+  \item Robots are never random. Randomness is like a virus to robots:
+    it degenerates their brains, it destroys their predictable soft
+    and deterministic picture of the world.
+  \end{enumerate}
+  In other words, you would agree with me that someone, who is a big
+  sports fan, a married man with a lover or two on the side. A man,
+  who might occassionaly sleep in, bring his dog to the office, or
+  bring his home-cooked food to the lunch break looks like an exemplary
+  human.\\
+  Surprise: the same difference is reflected in language! Not only
+  in programming languages, but, and especially so, in natural
+  languages. In the realm of natural languages, it goes by the name
+  of Grice's maxims. Or, rather... as flauting of these maxims.\\
+  You see, humans exploit the faults in language semantics, creating
+  simultaneously new meanings on pragmatic level.
+
+\end{description}
+\vskip 1cm
+
+\section*{\hfill\textit{scene 2}}
+\begin{description}[itemsep=1ex,leftmargin=1cm]
+  \setlength{\parskip}{5pt}
+
+\item[] \hfill \\
+  \textit{The North Parade.}
+
+\item[LUCY] So, I shall have another rival to add to my mistress's list, Captain Absolute.
+
+\item[SIR LUCIUS] Hah! My little embassadress!
+
+\item[LUCY] \textit{(speaking simply)} O gemini!  And I have been waiting for your worship here on the North.
+
+\end{description}
+\vskip 1cm
+
+
+\end{document}

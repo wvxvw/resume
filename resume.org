@@ -1,0 +1,123 @@
+# -*- fill-column: 80; org-confirm-babel-evaluate: nil -*-
+
+#+TITLE:     Resume (For Socrates)
+#+AUTHOR:    Oleg Sivokon
+#+EMAIL:     olegsivokon@gmail.com
+#+DATE:      <2014-11-03 Mon>
+#+DESCRIPTION: Resume (For Socrates)
+#+KEYWORDS: Resume, Socrates, Emily Dickinson
+#+LANGUAGE: en
+#+LaTeX_CLASS: article
+#+LATEX_HEADER: \usepackage[usenames,dvipsnames]{color}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \usepackage[backend=bibtex, style=numeric]{biblatex}
+#+LATEX_HEADER: \usepackage{commath}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usetikzlibrary{shapes,backgrounds}
+#+LATEX_HEADER: \usepackage{marginnote}
+#+LATEX_HEADER: \usepackage{enumerate}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage{color}
+#+LATEX_HEADER: \hypersetup{urlcolor=blue}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue}
+#+LATEX_HEADER: \addbibresource{bibliography.bib}
+#+LATEX_HEADER: \setlength{\parskip}{16pt plus 2pt minus 2pt}
+#+LATEX_HEADER: \definecolor{codebg}{rgb}{0.96,0.99,0.8}
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="./css/icfp.css"/>
+
+#+BEGIN_SRC emacs-lisp :exports none
+  (setq org-latex-pdf-process
+        '("latexmk -pdflatex='pdflatex -shell-escape -interaction nonstopmode' -pdf -bibtex -f %f")
+        org-latex-listings t
+        org-latex-custom-lang-environments '((maxima "maxima"))
+        org-src-fontify-natively t
+        org-babel-latex-htlatex "htlatex")
+  (defmacro by-backend (&rest body)
+    `(cl-case (when (boundp 'backend) (org-export-backend-name backend))
+       ,@body))
+#+END_SRC
+
+* Contact Information
+  - Name: Oleg Sivokon
+  - Birth date: 23.06.1978
+  - Cell phone: +972 (0)544563314
+  - Email: olegsivokon@gmail.com
+  - Address: Florentin 50, Tel Aviv, Israel
+
+#+VERSE
+No, I'm not interested in developing a powerful brain. All I'm after
+is just a mediocre brain, something like the President of the American
+Telephone and Telegraph Company.
+#+END_VERSE
+
+*Alan Turing*
+  
+* Preface
+  I decided to give it a form of Socratic dialogue because I always wanted to
+  write a Socratic dialogue, but all I end up writing turns out to be a job
+  application.
+
+* Act 1
+  I cought up with Emily just as she was nearing the school. She was engaged in
+  a small talk with Immortality.  I thought it would be rude to interrupt and
+  tried to quickly get ahead of their carriage.  However, she asked me to join
+  in the conversation.  And so I did.  For a while we exchanged the usual
+  courtesies, but soon the conversation took a sharp turn from poetry towards
+  the amazing art of ants walking on checkered surfaces, from the patterns of
+  embroidery decorating the carriage to the patterns in the warping whirwinds in
+  the freezing air, to the patterns in seemingly randomly events all of them
+  leading to this moment, no matter how random and irrational still the only
+  possible moment that could ever be.
+
+  And this is this very conversation that I set up to lay down as truthfuly and
+  faithfully as my memory allows me to.
+
+  Emily: 
+
+  As I look at this wreckage of a house, I can't help but to think how
+  unpredictable the future is.  Perhaps only a few years ago there was a family
+  living here.  Going about their business dawn till dusk, never imagining their
+  fate would become just a figment of my imagination.  How tragic it is to think
+  that no matter the effort we put into refining ensuring the future---single
+  swing of mood of whoever turns the wheels of fortune will shatter all hopes of
+  stability and predictability into tiniest pieces.
+  
+  Immortality:
+
+  I kindly disagree with you.  I believe that our friend does so too.  Not only
+  the future is very predictable, it doesn't even make sense to predict it.
+  There is and will always be only one future.  What is the point of predicting
+  it?
+
+  Death:
+
+  It seems like my place thus is to always disagree with you---which kind of
+  supports your point.  Hm...  Nevertheless, let me ask you: what do you mean
+  when you say "one"?  Literally, what "oneness" is about?  I, for one, never
+  saw things in this universe come in ones.  Quite the contrary, they always
+  seem to be the infinitudes of smaller bits of those things.
+
+  Immortality:
+
+  What about atoms, elementary particles, perhaps strings?  Plank's constant
+  after all?
+
+  Death:
+
+  What about them?  Can't you /imagine/ dividing a line of Plank's length in
+  two?  What about four?
+
+  Immortality:
+
+  What if "oneness" as you put it was the "sameness"?  Let's say, you could
+  collect all objects of one kind in the universe.  This one kind would give
+  you "one".  You then collect a group of different object, and this gives
+  you "two"...
+
+  Death:
+
+  Doesn't this presuppose "oneness"?
