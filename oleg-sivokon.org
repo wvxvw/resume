@@ -75,6 +75,7 @@
   | Address:    | Florentin 50, Tel Aviv, Israel |
 
   /You can find an up-to-date electronic copy of this document at/
+  
   https://github.com/wvxvw/resume
 
 * Introduction
