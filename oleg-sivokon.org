@@ -381,10 +381,10 @@
     2. *Mercury* - A more modern Prolog, compiled, with ML-like type system.
        An interesting language, which I tried once and would want to try more,
        if a possibility presents itself.
-    3. *SQL* - Yes, SQL isn't a logical programming language, but it is so 
+    3. *SQL* - Yes, SQL isn't a logic programming language, but it is so 
        closely related to Prolog, that I felt it would be appropriate to put it
-       here.  I'm not a pro.  I had to use SQL with a handful of databases,
-       but there wasn't much to write home about.
+       here.  I'm not a pro.  I had to use SQL with a handful of databases, but
+       there wasn't much to write home about.
        
   + Miscellaneous
     1. *Forth* - This was my first non-mainstream language.  It was totally
