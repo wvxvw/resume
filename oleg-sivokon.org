@@ -28,8 +28,9 @@
 #+OPTIONS: toc:nil
 
 #+BEGIN_SRC emacs-lisp :exports none
-  (setq org-latex-pdf-process '("latexmk -pdflatex='pdflatex -shell-escape
-        -interaction nonstopmode' -pdf -bibtex -f %f") org-latex-listings t
+  (setq org-latex-pdf-process
+        '("latexmk -pdflatex='pdflatex -shell-escape -interaction nonstopmode' -pdf -bibtex -f %f")
+        org-latex-listings t
         org-src-fontify-natively t org-confirm-babel-evaluate nil
         org-babel-latex-htlatex "htlatex")
 #+END_SRC
@@ -298,16 +299,14 @@
        based Emacs.
     4. *Clojure* - few times, when I had to write something quick to run on JVM
        with no specific language requirement, I tried to use Clojure.  I'm not a
-       functional programming puritan kind of person, so Clojure isn't really my
-       cup of tea.
+       functional programming purist, so Clojure isn't really my cup of tea.
     5. *ECMAScript* - you are probably surprised to hear that JavaScript is a...
        well, Lisp.  Frankly, it's a very bad Lisp.  Regardless, it's been
        present on the last couple of Lisp symposiums.  Brendan Eich claims it to
        be ``inspired'' by Scheme.  So, we'll have to live with this taxonomy.  I
        wrote quite a bit of JavaScript code at different times on different
        occasions.  I never liked it, even though I, probably, know the language
-       very well, there's not much to really know well there, and nothing to be
-       proud of.
+       very well.
     6. *ActionScript* - This is just another name for a particular edition of 
        ECMAScript designed by Mozilla and Macromedia, (later Adobe took over)
        around 2004-2006.  I'm talking of course about ActionScript 3.
@@ -317,22 +316,20 @@
        anyone else living and writing in this language today, but, as with
        JavaScript, I just shrug whenever someone mentions it.
     7. *TypeScript* - A ``JavaScript with types''.  A toy language designed by
-       Microsoft.  Basically a preprocessor macro, which adds ML-style types
-       to JavaScript.  Very ad hoc and simplistic, yet I have to admit I wrote
-       a project in this language.  A loader for arcade games for Smart TV.
+       Microsoft.  Basically a preprocessor macro, which adds ML-style types to
+       JavaScript.  Very ad hoc and simplistic.  I wrote a simple project in it.
+       A loader for arcade games for Smart TV.
   
   + FORTRAN-esque
     1. *C* - I can read and, eventually, patch others code.  I wrote a wrapper
-       for C library, which required marginal knowledge of C language.  This
-       whole family is certainly not my cup of coffee.
+       for C library, which required marginal knowledge of C language.
     2. *Java* - On several occasions I had to write some Java code.  Once it was
        Spring, another time it was JEE, but I only did maintenance work on old
        large projects, fixing a minor bug here and there.
     3. *C#* - About five years ago I wrote couple of plugins for FlashDevelop.
        At another time, I tried to extend MSBuild with some C# code, but I
        quickly realized nobody (even in the MSVS world) uses MSBuild, so I gave
-       it up.  Again, this is not a kind of language that has a strong appeal
-       for me.
+       it up.  This is not a kind of language that has a strong appeal for me.
     4. *C++* - I took a course on CUDA (it's an NVidia technology for programming
        for their graphic processors), but I didn't finish it.  The course
        required writing in C++.  This was the only time in my life I wrote in
@@ -351,13 +348,9 @@
        concepts of functional programming.  All I wrote in it were the exercises
        from Project Euler, nevertheless, I believe, I have a tolerable level of
        understanding.
-    2. *Haskell* - I remember Douglas Crockford once said that today nobody
-       talks about Java as a programming language, instead everyone uses it as
-       an attack vector.  Haskell is my attack vector.  It would be unfair to
-       call this language dumb or simplistic.  After all, if you compare it to,
-       say, JavaScript, it's a much, much better language.  Yet, JavaScript
-       never promised the kinds of things Haskell does, and I am particularly
-       upset about Haskell's overpromise and underdelivery.
+    2. *Haskell* - Is the obvious must-know in the functional programming camp.
+       I, too, took a stab at it, but I don't share the excitement usually 
+       associated with this language.
     3. *Erlang* - Nice small language.  I had a chance encounter with it about
        four years ago, when I had to write a chat bot in it.  There are few
        awkward things about the language, but what really shines here is the
@@ -379,8 +372,7 @@
        I recently made a second attempt, equipped with The Art of Prolog, and
        I'm falling in love with this language.
     2. *Mercury* - A more modern Prolog, compiled, with ML-like type system.
-       An interesting language, which I tried once and would want to try more,
-       if a possibility presents itself.
+       An interesting language, which I tried once and would want to try more.
     3. *SQL* - Yes, SQL isn't a logic programming language, but it is so 
        closely related to Prolog, that I felt it would be appropriate to put it
        here.  I'm not a pro.  I had to use SQL with a handful of databases, but
@@ -391,12 +383,10 @@
        mind-blowing.  It made me rethink a lot of things about other languages.
        I'd be happy to get to know it better, if I had more time.
     2. *PostScript* - Inspired by Forth, I looked at similar languages, and
-       eventually, I even wrote a very reduced version of a PostScript
+       eventually, I even wrote a very limited version of a PostScript
        interpreter in ActionScript (it's on GitHub too).
-    3. *J* - And when you'd think there can't be anything weirder... oh wait,
-       J isn't at all weird.  It looks like pigeon footprints to the
-       non-initiated, but, in fact, this is a great language, with fantastic
-       concept and very interesting perspective.  If only I had more time.
+    3. *J* - I never made it past the primer, but I'd like to some day.  I 
+       believe this is a very good and severely misunderstood language.
     4. *Cypher*, *Gremlin*, *SPARQL*, *RDF* - odd languages developed for
        querying graph databases.  I've no good words for any of these.
     5. *Shell* - Bash, actually. I'm not a pro, but you can't use a Linux
@@ -425,10 +415,9 @@
   + Markup and data
     1. *XML* - At a time I compiled an E4X tutorial, which was quite
        popular on actionscript.org.  I wrote an XML parser, probably even more
-       then once.  This also includes (maybe somewhat rudimentary XSLT, DTD and
+       than once.  This also includes (maybe somewhat rudimentary XSLT, DTD and
        even RNG!).
-    2. *JSON* - As with Haskell, I'm trying to convince people that this does
-       not achieve the goal of what a markup language can do.
+    2. *JSON* - I think it's a severe case of oversimplification.
     3. *TeX* - I'm a newbie, but I'm improving.  Obviously, this resume was set
        using LaTeX and Emacs' awesome Org mode.
     4. *Info* - I wrote several info pages, no kidding!
@@ -445,8 +434,7 @@
   By this time you may be wondering... yes, here they are!
    
   + Languages that I don't know squat about
-    1. *Pascal* - Yup, I've never written not even a single line of code in
-       Pascal.
+    1. *Pascal* - Yup, I've never written not even a single line of Pascal.
     2. *Basic* - Actually, I wrote some, but I'd rather not talk about it.
     3. *Perl* - I am horrified by the looks of it.
     4. *Ruby* - Nope, I know no Ruby either.

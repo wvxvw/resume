@@ -1,4 +1,4 @@
-% Created 2014-12-08 Mon 22:24
+% Created 2015-02-10 Tue 22:33
 \documentclass[oneside]{memoir}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -311,16 +311,14 @@ it make progress.  Perhaps if I had more time, I'd try to look into Guile
 based Emacs.
 \item \textbf{Clojure} - few times, when I had to write something quick to run on JVM
 with no specific language requirement, I tried to use Clojure.  I'm not a
-functional programming puritan kind of person, so Clojure isn't really my
-cup of tea.
+functional programming purist, so Clojure isn't really my cup of tea.
 \item \textbf{ECMAScript} - you are probably surprised to hear that JavaScript is a\ldots{}
 well, Lisp.  Frankly, it's a very bad Lisp.  Regardless, it's been
 present on the last couple of Lisp symposiums.  Brendan Eich claims it to
 be ``inspired'' by Scheme.  So, we'll have to live with this taxonomy.  I
 wrote quite a bit of JavaScript code at different times on different
 occasions.  I never liked it, even though I, probably, know the language
-very well, there's not much to really know well there, and nothing to be
-proud of.
+very well.
 \item \textbf{ActionScript} - This is just another name for a particular edition of 
 ECMAScript designed by Mozilla and Macromedia, (later Adobe took over)
 around 2004-2006.  I'm talking of course about ActionScript 3.
@@ -330,24 +328,22 @@ ActionScript.  I might know the ins and outs of the language better than
 anyone else living and writing in this language today, but, as with
 JavaScript, I just shrug whenever someone mentions it.
 \item \textbf{TypeScript} - A ``JavaScript with types''.  A toy language designed by
-Microsoft.  Basically a preprocessor macro, which adds ML-style types
-to JavaScript.  Very ad hoc and simplistic, yet I have to admit I wrote
-a project in this language.  A loader for arcade games for Smart TV.
+Microsoft.  Basically a preprocessor macro, which adds ML-style types to
+JavaScript.  Very ad hoc and simplistic.  I wrote a simple project in it.
+A loader for arcade games for Smart TV.
 \end{enumerate}
 
 \item FORTRAN-esque
 \begin{enumerate}
 \item \textbf{C} - I can read and, eventually, patch others code.  I wrote a wrapper
-for C library, which required marginal knowledge of C language.  This
-whole family is certainly not my cup of coffee.
+for C library, which required marginal knowledge of C language.
 \item \textbf{Java} - On several occasions I had to write some Java code.  Once it was
 Spring, another time it was JEE, but I only did maintenance work on old
 large projects, fixing a minor bug here and there.
 \item \textbf{C\#} - About five years ago I wrote couple of plugins for FlashDevelop.
 At another time, I tried to extend MSBuild with some C\# code, but I
 quickly realized nobody (even in the MSVS world) uses MSBuild, so I gave
-it up.  Again, this is not a kind of language that has a strong appeal
-for me.
+it up.  This is not a kind of language that has a strong appeal for me.
 \item \textbf{C++} - I took a course on CUDA (it's an NVidia technology for programming
 for their graphic processors), but I didn't finish it.  The course
 required writing in C++.  This was the only time in my life I wrote in
@@ -368,13 +364,9 @@ when I didn't regret encountering it.
 concepts of functional programming.  All I wrote in it were the exercises
 from Project Euler, nevertheless, I believe, I have a tolerable level of
 understanding.
-\item \textbf{Haskell} - I remember Douglas Crockford once said that today nobody
-talks about Java as a programming language, instead everyone uses it as
-an attack vector.  Haskell is my attack vector.  It would be unfair to
-call this language dumb or simplistic.  After all, if you compare it to,
-say, JavaScript, it's a much, much better language.  Yet, JavaScript
-never promised the kinds of things Haskell does, and I am particularly
-upset about Haskell's overpromise and underdelivery.
+\item \textbf{Haskell} - Is the obvious must-know in the functional programming camp.
+I, too, took a stab at it, but I don't share the excitement usually 
+associated with this language.
 \item \textbf{Erlang} - Nice small language.  I had a chance encounter with it about
 four years ago, when I had to write a chat bot in it.  There are few
 awkward things about the language, but what really shines here is the
@@ -398,8 +390,7 @@ written in Haxe and the interface being AS3.
 I recently made a second attempt, equipped with The Art of Prolog, and
 I'm falling in love with this language.
 \item \textbf{Mercury} - A more modern Prolog, compiled, with ML-like type system.
-An interesting language, which I tried once and would want to try more,
-if a possibility presents itself.
+An interesting language, which I tried once and would want to try more.
 \item \textbf{SQL} - Yes, SQL isn't a logic programming language, but it is so 
 closely related to Prolog, that I felt it would be appropriate to put it
 here.  I'm not a pro.  I had to use SQL with a handful of databases, but
@@ -412,12 +403,10 @@ there wasn't much to write home about.
 mind-blowing.  It made me rethink a lot of things about other languages.
 I'd be happy to get to know it better, if I had more time.
 \item \textbf{PostScript} - Inspired by Forth, I looked at similar languages, and
-eventually, I even wrote a very reduced version of a PostScript
+eventually, I even wrote a very limited version of a PostScript
 interpreter in ActionScript (it's on GitHub too).
-\item \textbf{J} - And when you'd think there can't be anything weirder\ldots{} oh wait,
-J isn't at all weird.  It looks like pigeon footprints to the
-non-initiated, but, in fact, this is a great language, with fantastic
-concept and very interesting perspective.  If only I had more time.
+\item \textbf{J} - I never made it past the primer, but I'd like to some day.  I 
+believe this is a very good and severely misunderstood language.
 \item \textbf{Cypher}, \textbf{Gremlin}, \textbf{SPARQL}, \textbf{RDF} - odd languages developed for
 querying graph databases.  I've no good words for any of these.
 \item \textbf{Shell} - Bash, actually. I'm not a pro, but you can't use a Linux
@@ -450,10 +439,9 @@ equations.
 \begin{enumerate}
 \item \textbf{XML} - At a time I compiled an E4X tutorial, which was quite
 popular on actionscript.org.  I wrote an XML parser, probably even more
-then once.  This also includes (maybe somewhat rudimentary XSLT, DTD and
+than once.  This also includes (maybe somewhat rudimentary XSLT, DTD and
 even RNG!).
-\item \textbf{JSON} - As with Haskell, I'm trying to convince people that this does
-not achieve the goal of what a markup language can do.
+\item \textbf{JSON} - I think it's a severe case of oversimplification.
 \item \textbf{\TeX{}} - I'm a newbie, but I'm improving.  Obviously, this resume was set
 using \LaTeX{} and Emacs' awesome Org mode.
 \item \textbf{Info} - I wrote several info pages, no kidding!
@@ -474,8 +462,7 @@ By this time you may be wondering\ldots{} yes, here they are!
 \begin{itemize}
 \item Languages that I don't know squat about
 \begin{enumerate}
-\item \textbf{Pascal} - Yup, I've never written not even a single line of code in
-Pascal.
+\item \textbf{Pascal} - Yup, I've never written not even a single line of Pascal.
 \item \textbf{Basic} - Actually, I wrote some, but I'd rather not talk about it.
 \item \textbf{Perl} - I am horrified by the looks of it.
 \item \textbf{Ruby} - Nope, I know no Ruby either.
