@@ -1,0 +1,125 @@
+# -*- fill-column: 80; org-confirm-babel-evaluate: nil -*-
+
+#+TITLE:     Resume
+#+AUTHOR:    Oleg Sivokon
+#+EMAIL:     olegsivokon@gmail.com
+#+DATE:      <2014-11-28-Fri>
+#+DESCRIPTION: My resume
+#+KEYWORDS: Resume, job, employment, cv
+#+OPTIONS: toc:nil
+
+* Contact Information
+  | Name:       | Oleg Sivokon                   |
+  | Birth date: | 23, 06, 1978                   |
+  | Cell phone: | +972 (0) 544-563314            |
+  | Email:      | [[mailto:olegsivokon@gmail.com][olegsivokon@gmail.com]]          |
+  | Address:    | Florentin 50, Tel Aviv, Israel |
+
+  /You can find an up-to-date electronic copy of this document at/
+  
+  https://github.com/wvxvw/resume
+
+\clearpage
+
+* Foreword
+  Even though most of my recorded experience is in Flash and associated
+  technologies, I am now looking to continue in a different field.  Being an
+  Emacs user, my preferences of language, operating system and general attitude
+  towards my trade have grown to be very different from those typical of the
+  Flash community.  The closest thing I can possibly hope to find on the jobs
+  market would be a Python programmer position, with a very strong preference
+  towards Linux as a working environment.
+
+* Work History
+  
+** PowToon Ltd.
+   + *Position:* /Programmer/
+   + *Term:* /January 2014 – Present/
+   
+** TransGaming Inc.
+   + *Position:* /Programmer/
+   + *Term:* /April 2013 – 2013 (less than a year)/
+   
+** Hewlett-Packard
+   + *Position:* /Programmer/
+   + *Term:* /October 2011 – April 2012 (7 months)/
+   
+** Rounds
+   + *Position:* /Programmer/
+   + *Term:* /December 2010 – August 2011 (9 months)/
+   
+** BrainPOP
+   + *Position:* /Advisor/
+   + *Term:* /2008 – March 2010 (2 years)/
+   
+** AditAll
+   + *Position:* /Programmer/
+   + *Term:* /June 2007--March 2010 (2 years 10 months)/
+   
+** Gazit Studio
+   + *Position:* /Programmer/
+   + *Term:* /January 2006--June 2006 (6 months)/
+
+** TimeZero LLC
+   + *Position:* /Designer/
+   + *Term:* /June 2005 – December 2005 (7 months)/
+
+* Skills
+  Listed below are the languages I used to write something more substantial
+  than a ``hello world'' program, but my level of proficiency with them is
+  very different.  My favorite languages are in the Lisp family, but I also
+  like Prolog and am interested in statistical programming.
+
+** Lisps
+   - Common Lisp
+   - Scheme
+   - Clojure
+   - Shen
+   - JavaScript
+   - ActionScript
+
+** Fortran Family
+   - Java
+   - C
+   - C#
+
+** ML Family
+   - OCaml
+   - Haskell
+   - Erlang
+   - Haxe
+   - Scala
+
+** Basic Family
+   - Python
+
+** Math and Statistics
+   - Octave (Matlab)
+   - R (S)
+   - Maxima
+   - J
+
+** Logic Programming
+   - Prolog
+   - Mercury
+
+** Misc
+   - Rust
+   - SQL
+   - Forth
+
+** DevOps
+   - Shell
+   - General familiarity with Jenkins.
+   - Gradle
+   - SCons
+   - Ant
+   - Grunt
+
+* Hobbies
+  - NLP
+  - Computational Linguistics
+  - Moral philosophy
+  - General AI
+  - Graphs
+

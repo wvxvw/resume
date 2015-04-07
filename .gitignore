@@ -10,3 +10,5 @@
 /playscript.dvi
 /playscript.log
 /playscript.toc
+*.fls
+*_latexmk
