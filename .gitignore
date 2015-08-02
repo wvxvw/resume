@@ -12,3 +12,8 @@
 /playscript.toc
 *.fls
 *_latexmk
+/embellished-resume.docx
+/embellished-resume.odt
+/ptyhon-resume.zip
+/python-resume.html
+/python-resume.txt

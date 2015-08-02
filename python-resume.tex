@@ -1,0 +1,185 @@
+% Created 2015-05-21 Thu 13:17
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\author{Oleg Sivokon}
+\date{\textit{<2015-05-19 Tue>}}
+\title{Resume}
+\hypersetup{
+ pdfauthor={Oleg Sivokon},
+ pdftitle={Resume},
+ pdfkeywords={Resume, job, employment, cv},
+ pdfsubject={My resume},
+ pdfcreator={Emacs 25.0.50.1 (Org mode 8.3beta)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Contact Information}
+\label{sec:orgheadline1}
+\begin{center}
+\begin{tabular}{ll}
+Name: & Oleg Sivokon\\
+Birth date: & 23, 06, 1978\\
+Cell phone: & +972 (0) 544-563314\\
+Email: & \href{mailto:olegsivokon@gmail.com}{olegsivokon@gmail.com}\\
+Address: & Florentin 50, Tel Aviv, Israel\\
+\end{tabular}
+\end{center}
+
+\emph{You can find an up-to-date electronic copy of this document at}
+
+\url{https://github.com/wvxvw/resume}
+
+\clearpage
+
+\section{Foreword}
+\label{sec:orgheadline2}
+After sending my complete resume couple dozens times I've came to conclusion
+that if I mention all programming-related experience I had so far, this
+confuses human resources employees, therefore this version of my resume
+will focus on my experience related to Python and will deliberately leave
+out the rest.
+
+I will, however, put a loundry list of technologies I worked with here in
+order to optimize the search.
+
+\begin{description}
+\item[{GNU/Linux}] is the operating system I use at work and at home.  Most of
+the time it's RHEL-like distros, but I'm also familiar with Debian-style
+infrastructure.  I know enough to perform a system administrator function,
+however I'm not actively seeking that role.
+\item[{Web stack}] which includes HTML, JavaScript and CSS.  I've used all of
+these on more than one occasion.  In fact, my programming career began
+with another ECMAScript dialect - ActionScript.  I'm familiar with
+many JavaScript implementations, including NodeJS, Rhino and even
+Qt Script.  I'm familiar with NodeJS because it is used with tools
+like \texttt{jslint}, \texttt{tern} and \texttt{Grunt} for JavaScript development tasks.
+I'm familiar with Rhino because it is used in testing in Selenium
+and because it is available in Ant scripts, while it doesn't require
+additional libraries, which makes it a choice of embedded programming
+language in it.  I was considering Qt Script for one of my pet projects,
+which, unfortunately, never left the ground.
+If I need to throw in some names, then, of course, I used JQuery, 
+I also used Backbone before everyone was so excited about Angluar,
+I also used Prototype before everyone was so excited about Backbone.
+Of course I know and used Underscore, various JQuery plugins, Mootools,
+and a lot of other species from the JavaScrip zoo.
+Eventually, I also touched PHP, JSP and even ASP (classic!) both the
+Basic and the JScript varieties, but washing the smell off my hands
+was no easy taks.
+\end{description}
+
+\section{Work History}
+\label{sec:orgheadline6}
+
+\subsection{PowToon Ltd.}
+\label{sec:orgheadline3}
+\begin{itemize}
+\item \textbf{Position:} \emph{Programmer}
+\item \textbf{Term:} \emph{January 2014 – May 2015}
+\end{itemize}
+
+When the company hired me, they didn't have any automated builds and no tests
+for their product.  Even though it wasn't my direct responsibility, I
+volunteered to write build scripts, which included using Fabric, Ant and
+Gradle.  I also volunteered to set up Jenkins continuous integration server
+which I later managed until I quit.
+
+I also tried to organize testing, however, I had only achieved partial success
+here.  I wrote a minimal HTTP server based on \texttt{SimpleHTTPServer} with HTML
+interface for developers, and (later) testers, where they could submit bug
+reports, which would be automatically converted into test cases.  Regardless
+of the system being very simple, other programmers avoided using it.
+
+During my time at Powtoon I also conducted several experiments in statistical
+analysis (albeit very simplistic) of the data collected by the company.
+In particular, using \texttt{NumPy} and \texttt{SciPy} packages I wrote a simple \emph{k-means}
+algorithm which would try to cluster the textual data extracted from the
+presentations prepared by the users based on the presentation's subject.
+
+Powtoon's server-side code is written using Django framework, obviously,
+I had to use it too.
+
+\subsection{TransGaming Inc.}
+\label{sec:orgheadline4}
+\begin{itemize}
+\item \textbf{Position:} \emph{Programmer}
+\item \textbf{Term:} \emph{April 2013 – 2013 (less than a year)}
+\end{itemize}
+
+A very cumbersome part of my job here was the testing.  The company
+specializes in games for the so-called ``smart-TV''.  This implies working
+with proprietary products which make it difficult to test integration due to
+restrictions wrt viewing the source code and communication protocols.
+
+In order to automate the testing, I used Selenium server, which I extended
+with my code intended to automate deployment into television set or an
+emulator.  My job, however, had an interesting side to it too: since my
+primary objective was to write a game, in order to test the game, I wrote
+several game bots, with different skill level.
+
+\subsection{Rounds}
+\label{sec:orgheadline5}
+\begin{itemize}
+\item \textbf{Position:} \emph{Programmer}
+\item \textbf{Term:} \emph{December 2010 – August 2011 (9 months)}
+\end{itemize}
+
+Before the company hired me, the company never conducted any systematic
+testing of their product.  Even though testing was not on the list of my
+direct responsibilities, I volunteered to write a minimal testing server
+which would replicate the API of the company's main server and I wrote a chat
+client (the company's product is a video chat), which would enact prepared
+scenarios in order to search for misalignment in the chat protocol
+interpretation on the client and server sides.
+
+\section{Courses}
+\label{sec:orgheadline7}
+I took several online courses from Coursera, Udacity and edX, which required
+me to complete programming assignments in Python.
+
+I took a complete series of courses in statistics at edX (three courses),
+the data scientist toolbox course at Coursera (six short courses), machine
+learning at Udacity, introduction to algorithms (two courses) at Coursera.
+
+I also volunteered for SCons project, writing an ActionScript plugin for it.
+(SCons is an extensible build system written in Python).
+
+Two years ago I interviewed for a position of Python programmer at Walla.
+They requested that I write a small test project, which I did.  The project,
+although somewhat outdated, is still available for viewing:
+\url{https://github.com/wvxvw/intj}.
+
+I am currently studying in Open University of Israel, mathematics faculty,
+about to finish my first year.
+
+\section{Hobbies}
+\label{sec:orgheadline8}
+\begin{itemize}
+\item NLP
+\item Computational linguistics
+\item Moral philosophy
+\item General AI
+\item Graphs
+\end{itemize}
+\end{document}
