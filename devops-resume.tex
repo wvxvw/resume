@@ -1,4 +1,4 @@
-% Created 2015-08-11 Tue 13:04
+% Created 2015-08-30 Sun 13:35
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -21,7 +21,7 @@
 \usepackage[scaled]{helvet}
 \renewcommand*\familydefault{\sfdefault}
 \author{Oleg Sivokon}
-\date{\textit{<2015-08-11 Tue>}}
+\date{\textit{<2015-08-30 Sun>}}
 \title{Resume}
 \hypersetup{
  pdfauthor={Oleg Sivokon},
@@ -92,13 +92,21 @@ Subversion, Mercurial, Perforce, Bazaar.
 \subsection{PowToon Ltd.}
 \label{sec:orgheadline9}
 \begin{description}
-\item[{Position}] \emph{Programmer}
+\item[{Position}] \emph{Programmer} / \emph{ops}
 \item[{Term}] \emph{January 2014--May 2015}
 \item \textbf{Accomplishments}
 \begin{itemize}
-\item I rewrote the major the application component (the player).
+\item I set up and maintained Jenkins continuous integration server in
+an AWS box.  Maintainance included writing non-trivial configuration
+files, patching plug-ins (the mailer plugin), and one major version
+upgrade.
 \item I wrote most of the infrastructure code s.a. build scripts, automated
-test generation and continuous integration server setup.
+test generation and simplistic statistical analysis.  This included
+Ant build scripts for the ActionScript part of the project.  Gradle
+scripts for managing back-office resources.  Python (Fabric) scripts
+for deployment of the server-side and some statistics extraction
+from the customers database (NumPy, SciPy), although the later was
+more of an experiment.
 \item I wrote several designs for the product.
 \end{itemize}
 \end{description}
@@ -106,16 +114,18 @@ test generation and continuous integration server setup.
 \subsection{TransGaming Inc.}
 \label{sec:orgheadline10}
 \begin{description}
-\item[{Position}] \emph{Programmer}
+\item[{Position}] \emph{Programmer} / \emph{ops}
 \item[{Term}] \emph{April 2013--2013 (less than a year)}
 \item \textbf{Accomplishments}
 \begin{itemize}
-\item I wrote a game portal for ``Smart TV'' deployment.
 \item I wrote a tester program, which stress-tested the program performance
 on ``Smart TV''.
 \item I wrote automated build for my project.
 \item I wrote a sizable chunk of code dealing with usage statistic aggregation
 using Google Analytics.
+\item I did a good deal of administrative work on company's Git repository.
+This included working with history, cleaning the repository up, exporting
+reports, managing users' permissions, writing hooks.
 \end{itemize}
 \end{description}
 
@@ -126,20 +136,45 @@ using Google Analytics.
 \item[{Term}] \emph{December 2010 – August 2011 (9 months)}
 \item \textbf{Accomplishments}
 \begin{itemize}
-\item I rewrote the communication part of the video chat application.
 \item I wrote a testing server and utility programs for automated testing.
-\item I also wrote a small natural language processing program which was used
+\item I wrote a small natural language processing program which was used
 to advertise the company's product.
+\item For a short while I managed company's bug tracking system (Trac),
+later replaced by Redmine, and then outsourced.
 \end{itemize}
 \end{description}
 
 \section{Courses}
 \label{sec:orgheadline13}
-Data Scientists Toolbox, Statistics, Data Analysis, Machine Learning. at
-Coursera and edX.
+\begin{itemize}
+\item I am a second year student in Open University of Israel, facutly of
+Mathematics.
+\item I also took some on-line courses, s.a. Data Scientists Toolbox, Statistics,
+Data Analysis, Machine Learning. at Coursera and edX.
+\end{itemize}
+
+\section{Books}
+\label{sec:orgheadline14}
+This section lists some books, which, in my view, may help explain what kind
+of knowledge I have in relevant fields.
+
+\begin{description}
+\item[{agile programming}] Extreme Programming Explained by Kent Beck.
+\item[{software architecture}] Patterns of Enterprise Application Architecture by
+Martin Fowler.
+\item[{development and operations}] Pro Puppet by Spencer Krum, William Van
+Hevelingen, Ben Kero, James Turnbull, Jeffrey McCune.
+\item[{general computer science}] SICP, AITMA, TAOCP.  Less commonplace ones:
+Types and Programming Languages by B. C. Pierce, Homotopy Type Theory:
+Univalent Foundations of Mathematics, A Structural Approach to
+Operational Semantics by G. D. Plotkin--just to give you a sense of what
+I'm interested in.
+\item I regularly read CS periodicals, attend on-line lectures and listen to
+podcasts with particular interest in AI and computational linguistics.
+\end{description}
 
 \section{Volunteering And Community Work}
-\label{sec:orgheadline14}
+\label{sec:orgheadline15}
 SCons project, ActionScript plugin.  (SCons is an extensible build system
 written in Python).
 
@@ -149,12 +184,12 @@ forum dedicated to Flash and ActionScript.
 I'm an active member of Emacs Q/A site from the StackExchange family.
 
 \section{Examples Of My Work}
-\label{sec:orgheadline15}
+\label{sec:orgheadline16}
 My Github profile:
 \url{https://github.com/wvxvw/}.
 
 \section{Hobbies}
-\label{sec:orgheadline16}
+\label{sec:orgheadline17}
 \begin{itemize}
 \item NLP
 \item Computational linguistics

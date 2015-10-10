@@ -1,0 +1,152 @@
+                             ━━━━━━━━━━━━━━
+                                 RESUME
+
+                              Oleg Sivokon
+                             ━━━━━━━━━━━━━━
+
+
+                            <2015-08-11 Tue>
+
+
+
+
+
+1 Contact Information
+═════════════════════
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Name:        Oleg Sivokon                   
+   Birth date:  23, 06, 1978                   
+   Cell phone:  +972 (0) 544-563314            
+   Email:       [olegsivokon@gmail.com]        
+   Address:     Florentin 50, Tel Aviv, Israel 
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  /You can find an up-to-date electronic copy of this document at/
+
+  [https://github.com/wvxvw/resume]
+
+
+  [olegsivokon@gmail.com] mailto:olegsivokon@gmail.com
+
+
+2 Technology Summary
+════════════════════
+
+2.1 Languages
+─────────────
+
+  ActionScript, C, Clojure, Common Lisp, Emacs Lisp, Erlang, Forth,
+  Haskell, Haxe, Java, JavaScript, Mercury, OCaml, PHP, Prolog, Python,
+  Ruby, Scala, Scheme, Shell.
+
+
+2.2 Mathematics And Statistics
+──────────────────────────────
+
+  J, Julia, Maxima, Octave (Matlab), R (S).
+
+
+2.3 Related Technologies
+────────────────────────
+
+  Data representation formats (XML, YAML, JSON, RDF, AMF), Graph
+  databases, Network protocols (TCP, UDP, HTTP, FTP), Relational
+  databases (SQL), Web stack (HTML, CSS).
+
+
+2.4 Programming Environments
+────────────────────────────
+
+  Eclipse, Emacs, Intellij IDEA, Vim, Visual Studio.
+
+
+2.5 Operating Systems
+─────────────────────
+
+  Android, GNU/Linux, Mac OS, Microsoft Windows.
+
+
+2.6 Infrastructure
+──────────────────
+
+  Ant, Maven, Gradle, Make, Grunt, Jenkins, JIRA, Redmine, Track,
+  Mediawiki, Bugzilla, Selenium, Flex Unit, JUnit, unittest (Python),
+  5am, Cucumber, Git, Subversion, Mercurial, Perforce, Bazaar.
+
+
+3 Work History
+══════════════
+
+3.1 PowToon Ltd.
+────────────────
+
+  Position: /Programmer/
+  Term: /January 2014–May 2015/
+  : *Accomplishments*
+    • I rewrote the major the application component (the player).
+    • I wrote most of the infrastructure code s.a. build scripts,
+      automated test generation and continuous integration server setup.
+    • I wrote several designs for the product.
+
+
+3.2 TransGaming Inc.
+────────────────────
+
+  Position: /Programmer/
+  Term: /April 2013–2013 (less than a year)/
+  : *Accomplishments*
+    • I wrote a game portal for ``Smart TV'' deployment.
+    • I wrote a tester program, which stress-tested the program
+      performance on ``Smart TV''.
+    • I wrote automated build for my project.
+    • I wrote a sizable chunk of code dealing with usage statistic
+      aggregation using Google Analytics.
+
+
+3.3 Rounds
+──────────
+
+  Position: /Programmer/
+  Term: /December 2010 – August 2011 (9 months)/
+  : *Accomplishments*
+    • I rewrote the communication part of the video chat application.
+    • I wrote a testing server and utility programs for automated
+      testing.
+    • I also wrote a small natural language processing program which was
+      used to advertise the company's product.
+
+
+4 Courses
+═════════
+
+  Data Scientists Toolbox, Statistics, Data Analysis, Machine
+  Learning. at Coursera and edX.
+
+
+5 Volunteering And Community Work
+═════════════════════════════════
+
+  SCons project, ActionScript plugin.  (SCons is an extensible build
+  system written in Python).
+
+  For several years I was a member of Adobe Community Board.  I
+  moderated a forum dedicated to Flash and ActionScript.
+
+  I'm an active member of Emacs Q/A site from the StackExchange family.
+
+
+6 Examples Of My Work
+═════════════════════
+
+  My Github profile: [https://github.com/wvxvw/].
+
+
+7 Hobbies
+═════════
+
+  • NLP
+  • Computational linguistics
+  • Moral philosophy
+  • General AI
+  • Graphs

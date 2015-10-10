@@ -3,7 +3,7 @@
 #+TITLE:     Resume
 #+AUTHOR:    Oleg Sivokon
 #+EMAIL:     olegsivokon@gmail.com
-#+DATE:      <2015-08-11 Tue>
+#+DATE:      <2015-08-30 Sun>
 #+DESCRIPTION: My resume
 #+KEYWORDS: Resume, job, employment, cv
 #+OPTIONS: toc:nil
@@ -58,37 +58,67 @@
 * Work History
   
 ** PowToon Ltd.
-   + Position :: /Programmer/
+   + Position :: /Programmer/ / /ops/
    + Term :: /January 2014--May 2015/
    + *Accomplishments*
-     - I rewrote the major the application component (the player).
+     - I set up and maintained Jenkins continuous integration server in
+       an AWS box.  Maintainance included writing non-trivial configuration
+       files, patching plug-ins (the mailer plugin), and one major version
+       upgrade.
      - I wrote most of the infrastructure code s.a. build scripts, automated
-       test generation and continuous integration server setup.
+       test generation and simplistic statistical analysis.  This included
+       Ant build scripts for the ActionScript part of the project.  Gradle
+       scripts for managing back-office resources.  Python (Fabric) scripts
+       for deployment of the server-side and some statistics extraction
+       from the customers database (NumPy, SciPy), although the later was
+       more of an experiment.
      - I wrote several designs for the product.
    
 ** TransGaming Inc.
-   + Position :: /Programmer/
+   + Position :: /Programmer/ / /ops/
    + Term :: /April 2013--2013 (less than a year)/
    + *Accomplishments*
-     - I wrote a game portal for ``Smart TV'' deployment.
      - I wrote a tester program, which stress-tested the program performance
        on ``Smart TV''.
      - I wrote automated build for my project.
      - I wrote a sizable chunk of code dealing with usage statistic aggregation
        using Google Analytics.
+     - I did a good deal of administrative work on company's Git repository.
+       This included working with history, cleaning the repository up, exporting
+       reports, managing users' permissions, writing hooks.
 
 ** Rounds
    + Position :: /Programmer/
    + Term :: /December 2010 – August 2011 (9 months)/
    + *Accomplishments*
-     - I rewrote the communication part of the video chat application.
      - I wrote a testing server and utility programs for automated testing.
-     - I also wrote a small natural language processing program which was used
+     - I wrote a small natural language processing program which was used
        to advertise the company's product.
+     - For a short while I managed company's bug tracking system (Trac),
+       later replaced by Redmine, and then outsourced.
    
 * Courses
-  Data Scientists Toolbox, Statistics, Data Analysis, Machine Learning. at
-  Coursera and edX.
+  - I am a second year student in Open University of Israel, facutly of
+    Mathematics.
+  - I also took some on-line courses, s.a. Data Scientists Toolbox, Statistics,
+    Data Analysis, Machine Learning. at Coursera and edX.
+
+* Books
+  This section lists some books, which, in my view, may help explain what kind
+  of knowledge I have in relevant fields.
+  
+  - agile programming :: Extreme Programming Explained by Kent Beck.
+  - software architecture :: Patterns of Enterprise Application Architecture by
+       Martin Fowler.
+  - development and operations :: Pro Puppet by Spencer Krum, William Van
+       Hevelingen, Ben Kero, James Turnbull, Jeffrey McCune.
+  - general computer science :: SICP, AITMA, TAOCP.  Less commonplace ones:
+       Types and Programming Languages by B. C. Pierce, Homotopy Type Theory:
+       Univalent Foundations of Mathematics, A Structural Approach to
+       Operational Semantics by G. D. Plotkin--just to give you a sense of what
+       I'm interested in.
+  - I regularly read CS periodicals, attend on-line lectures and listen to
+    podcasts with particular interest in AI and computational linguistics.
 
 * Volunteering And Community Work
   SCons project, ActionScript plugin.  (SCons is an extensible build system

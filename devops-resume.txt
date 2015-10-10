@@ -1,0 +1,189 @@
+                             ______________
+
+                                 RESUME
+
+                              Oleg Sivokon
+                             ______________
+
+
+                            <2015-08-30 Sun>
+
+
+
+
+
+1 Contact Information
+=====================
+
+   Name:        Oleg Sivokon                   
+   Birth date:  23, 06, 1978                   
+   Cell phone:  +972 (0) 544-563314            
+   Email:       [olegsivokon@gmail.com]        
+   Address:     Florentin 50, Tel Aviv, Israel 
+
+  /You can find an up-to-date electronic copy of this document at/
+
+  [https://github.com/wvxvw/resume]
+
+
+  [olegsivokon@gmail.com] mailto:olegsivokon@gmail.com
+
+
+2 Technology Summary
+====================
+
+2.1 Languages
+~~~~~~~~~~~~~
+
+  ActionScript, C, Clojure, Common Lisp, Emacs Lisp, Erlang, Forth,
+  Haskell, Haxe, Java, JavaScript, Mercury, OCaml, PHP, Prolog, Python,
+  Ruby, Scala, Scheme, Shell.
+
+
+2.2 Mathematics And Statistics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  J, Julia, Maxima, Octave (Matlab), R (S).
+
+
+2.3 Related Technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Data representation formats (XML, YAML, JSON, RDF, AMF), Graph
+  databases, Network protocols (TCP, UDP, HTTP, FTP), Relational
+  databases (SQL), Web stack (HTML, CSS).
+
+
+2.4 Programming Environments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Eclipse, Emacs, Intellij IDEA, Vim, Visual Studio.
+
+
+2.5 Operating Systems
+~~~~~~~~~~~~~~~~~~~~~
+
+  Android, GNU/Linux, Mac OS, Microsoft Windows.
+
+
+2.6 Infrastructure
+~~~~~~~~~~~~~~~~~~
+
+  Ant, Maven, Gradle, Make, Grunt, Jenkins, JIRA, Redmine, Track,
+  Mediawiki, Bugzilla, Selenium, Flex Unit, JUnit, unittest (Python),
+  5am, Cucumber, Git, Subversion, Mercurial, Perforce, Bazaar.
+
+
+3 Work History
+==============
+
+3.1 PowToon Ltd.
+~~~~~~~~~~~~~~~~
+
+  Position: /Programmer/ / /ops/
+  Term: /January 2014--May 2015/
+  : *Accomplishments*
+    - I set up and maintained Jenkins continuous integration server in
+      an AWS box.  Maintainance included writing non-trivial
+      configuration files, patching plug-ins (the mailer plugin), and
+      one major version upgrade.
+    - I wrote most of the infrastructure code s.a. build scripts,
+      automated test generation and simplistic statistical analysis.
+      This included Ant build scripts for the ActionScript part of the
+      project.  Gradle scripts for managing back-office resources.
+      Python (Fabric) scripts for deployment of the server-side and some
+      statistics extraction from the customers database (NumPy, SciPy),
+      although the later was more of an experiment.
+    - I wrote several designs for the product.
+
+
+3.2 TransGaming Inc.
+~~~~~~~~~~~~~~~~~~~~
+
+  Position: /Programmer/ / /ops/
+  Term: /April 2013--2013 (less than a year)/
+  : *Accomplishments*
+    - I wrote a tester program, which stress-tested the program
+      performance on ``Smart TV''.
+    - I wrote automated build for my project.
+    - I wrote a sizable chunk of code dealing with usage statistic
+      aggregation using Google Analytics.
+    - I did a good deal of administrative work on company's Git
+      repository.  This included working with history, cleaning the
+      repository up, exporting reports, managing users' permissions,
+      writing hooks.
+
+
+3.3 Rounds
+~~~~~~~~~~
+
+  Position: /Programmer/
+  Term: /December 2010 – August 2011 (9 months)/
+  : *Accomplishments*
+    - I wrote a testing server and utility programs for automated
+      testing.
+    - I wrote a small natural language processing program which was used
+      to advertise the company's product.
+    - For a short while I managed company's bug tracking system (Trac),
+      later replaced by Redmine, and then outsourced.
+
+
+4 Courses
+=========
+
+  - I am a second year student in Open University of Israel, facutly of
+    Mathematics.
+  - I also took some on-line courses, s.a. Data Scientists Toolbox,
+    Statistics, Data Analysis, Machine Learning. at Coursera and edX.
+
+
+5 Books
+=======
+
+  This section lists some books, which, in my view, may help explain
+  what kind of knowledge I have in relevant fields.
+
+  agile programming: Extreme Programming Explained by Kent Beck.
+  software architecture: Patterns of Enterprise Application Architecture
+                         by Martin Fowler.
+  development and operations: Pro Puppet by Spencer Krum, William Van
+                              Hevelingen, Ben Kero, James Turnbull,
+                              Jeffrey McCune.
+  general computer science: SICP, AITMA, TAOCP.  Less commonplace ones:
+                            Types and Programming Languages by
+                            B. C. Pierce, Homotopy Type Theory: Univalent
+                            Foundations of Mathematics, A Structural
+                            Approach to Operational Semantics by
+                            G. D. Plotkin--just to give you a sense of
+                            what I'm interested in.
+  : I regularly read CS periodicals, attend on-line lectures and listen
+    to podcasts with particular interest in AI and computational
+    linguistics.
+
+
+6 Volunteering And Community Work
+=================================
+
+  SCons project, ActionScript plugin.  (SCons is an extensible build
+  system written in Python).
+
+  For several years I was a member of Adobe Community Board.  I
+  moderated a forum dedicated to Flash and ActionScript.
+
+  I'm an active member of Emacs Q/A site from the StackExchange family.
+
+
+7 Examples Of My Work
+=====================
+
+  My Github profile: [https://github.com/wvxvw/].
+
+
+8 Hobbies
+=========
+
+  - NLP
+  - Computational linguistics
+  - Moral philosophy
+  - General AI
+  - Graphs
