@@ -1,32 +1,16 @@
-# -*- fill-column: 80 -*-
+# -*- fill-column: 80; org-latex-hyperref-template: nil -*-
 
-#+TITLE:     Resume
-#+AUTHOR:    Oleg Sivokon
-#+EMAIL:     olegsivokon@gmail.com
-#+DATE:      <2015-10-10 Sat>
 #+DESCRIPTION: My resume
 #+KEYWORDS: Resume, job, employment, cv
 #+OPTIONS: toc:nil
-#+LaTeX_CLASS: article
-#+LaTeX_HEADER: \usepackage[scaled]{helvet}
-#+LaTeX_HEADER: \renewcommand*\familydefault{\sfdefault}
+#+LaTeX_CLASS: moderncv
 
-* Contact Information
-  | Name:       | Oleg Sivokon                   |
-  | Birth date: | 23, 06, 1978                   |
-  | Cell phone: | +972 (0) 544-563314            |
-  | Email:      | [[mailto:olegsivokon@gmail.com][olegsivokon@gmail.com]]          |
-  | Address:    | Florentin 50, Tel Aviv, Israel |
+#+BEGIN_LaTeX
+\makecvtitle
+#+END_LaTeX
 
-  /You can find an up-to-date electronic copy of this document at/
-  
-  https://github.com/wvxvw/resume
+* Technological Mastery
 
-#+BEGIN_LATEX
-\clearpage
-#+END_LATEX
-
-* Technology Summary
 ** Languages
    ActionScript, C, Clojure, Common Lisp, Emacs Lisp, Erlang, Forth, Haskell,
    Haxe, Java, JavaScript, Mercury, OCaml, PHP, Prolog, Python, Ruby, Scala,
@@ -51,70 +35,57 @@
    Bugzilla, Selenium, Flex Unit, JUnit, unittest (Python), 5am, Cucumber, Git,
    Subversion, Mercurial, Perforce, Bazaar.
 
-#+BEGIN_LATEX
-\clearpage
-#+END_LATEX
-
 * Work History
   
-** PowToon Ltd.
-   + Position :: /Programmer/
-   + Term :: /January 2014--May 2015/
-   + Accomplishments :: $\;$
-   
-     - I rewrote a major application component (the player) in Haxe (compiled to
-       Flash and C++).
-     - I wrote most of the infrastructure code s.a. build scripts, automated
-       test generation and continuous integration server setup using Ant, Grdle
-       and various utilities written in Python, s.a. Fabric.
-     - I wrote several designs for the product.
-   
-** TransGaming Inc.
-   + Position :: /Programmer/
-   + Term :: /April 2013--2013 (less than a year)/
-   + Accomplishments :: $\;$
-   
-     - I wrote a game portal for ``Smart TV'' deployment using TypeScript.
-     - I wrote a tester program, which stress-tested the program performance
-       on ``Smart TV'' in Python.
-     - I wrote automated build for my project using Ant.
-     - I wrote a sizable chunk of code dealing with usage statistic aggregation
-       based on Google Analytics in JavaScript.
+** Programmer
+   #+BEGIN_LaTeX
+   \cventry{2014--2015}{Haxe, ActionScript, Python}{PowToon Ltd}{}{}{}
+   #+END_LaTeX
 
-** Rounds
-   + Position :: /Programmer/
-   + Term :: /December 2010 – August 2011 (9 months)/
-   + Accomplishments :: $\;$
-   
-     - I rewrote the communication part of the video chat application in
-       ActionScript.
-     - I wrote a testing server and utility programs for automated testing in
-       Erlang.
-     - I also wrote a small natural language processing program which was used
-       to advertise the company's product.
-   
+   - Major application component (the player) in Haxe (compiled to Flash and
+     C++).
+   - Infrastructure code s.a. build scripts, automated test generation and
+     continuous integration server setup using Ant, Grdle and utilities written
+     in Python, s.a. Fabric.
+   - Designs for the product.
+
+#+BEGIN_LaTeX
+\newpage
+#+END_LaTeX
+
+** Programmer
+   #+BEGIN_LaTeX
+   \cventry{2013}{JavaScript, TypeScript, Python}{TransGaming Inc}{}{}{}
+   #+END_LaTeX
+
+   - Game portal for ``Smart TV'' using TypeScript.
+   - Performance tester program for ``Smart TV'' using Python.
+   - Automated build using Ant.
+   - Usage statistic aggregation based on Google Analytics using JavaScript.
+
+** Programmer
+   #+BEGIN_LaTeX
+   \cventry{2010--2011}{ActionScript, Erlang}{Rounds}{}{}{}
+   #+END_LaTeX
+
+   - Communication component of the video chat using ActionScript.
+   - Testing server and utility programs for automated testing using Erlang.
+   - Small natural language processing program for use in promotion of company's
+     product.
+
 * Courses
-  I am a second year student at Open University of Israel.
-
-  I took online courses at edX and Coursera.  The list is not exhaustive: 
-  Data Scientists Toolbox, Statistics, Data Analysis, Machine Learning.
+  + Open University of Israel :: Mathematics.
+  + Coursera and edX ::  Several MOOC classes related to programming including
+       Data Scientists Toolbox, Statistics, Data Analysis, Machine Learning.
 
 * Volunteering And Community Work
-  SCons project, ActionScript plugin.  (SCons is an extensible build system
-  written in Python).
+  + SCons :: Plugin for building ActionScript projects.
+  + Adobe Community Advisory Board :: Moderator of documentation and Q/A site.
+  + StackExchange :: Active participant in the  Emacs Q/A site.
 
-  For several years I was a member of Adobe Community Board.  I moderated a
-  forum dedicated to Flash and ActionScript.
-
-  I'm an active member of Emacs Q/A site from the StackExchange family.
-
-* Examples Of My Work
+* Work Examples
   My Github profile:
   https://github.com/wvxvw/.
 
 * Hobbies
-  - NLP
-  - Computational linguistics
-  - Moral philosophy
-  - General AI
-  - Graphs
+  NLP, Computational linguistics, Moral philosophy, General AI, Graphs.

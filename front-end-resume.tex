@@ -1,174 +1,155 @@
-% Created 2015-10-10 Sat 11:16
-\documentclass[11pt]{article}
+% Created 2015-10-13 Tue 21:25
+\documentclass[11pt,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\reversemarginpar
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usepackage[paper=letterpaper,
+             marginparwidth=124pt,
+             marginparsep=16pt,
+             left=18pt,
+             right=62pt,
+             includemp,
+             scale=0.75]{geometry}
+\setlength{\parindent}{0in}
+
+\newcounter{tmp}
+
+% personal data
+\name{Oleg}{Sivokon}
+\title{Resumé}
+\address{Tel Aviv}
+\phone[mobile]{+972~(0)~544-563314}
+\email{olegsivokon@gmail.com}
+\social[linkedin]{oleg.sivokon}
+\social[github]{wvxvw}
+\photo[64pt][0.4pt]{picture}
+
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \stepcounter{tmp}%
+    \vspace{1.3\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{%
+        \marginparwidth}{%
+            \hyphenpenalty=10000\raggedright%
+            \textcolor{color1}{\tikzmark{start-\thetmp}{\fontfamily{pag}\selectfont\textbf{#1}}\hfill\tikzmark{end-\thetmp}}}}}%
+            \tikz[remember picture,overlay]
+            \draw[color1,line width=1.5pt] ([yshift=2ex, xshift=-2ex]{pic cs:end-\thetmp}|-{pic cs:start-\thetmp})
+             -- ([yshift=-1ex, xshift=-2ex]{pic cs:end-\thetmp});
+    \vspace{-\baselineskip}\par}
+
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{fixltx2e}
-\usepackage{graphicx}
-\usepackage{longtable}
-\usepackage{float}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{marvosym}
-\usepackage{wasysym}
-\usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage[hidelinks]{hyperref}
-\tolerance=1000
-\usepackage[utf8]{inputenc}
-\usepackage[scaled]{helvet}
-\renewcommand*\familydefault{\sfdefault}
-\author{Oleg Sivokon}
-\date{\textit{<2015-10-10 Sat>}}
-\title{Resume}
+
+\usepackage[unicode]{hyperref}
 \hypersetup{
- pdfauthor={Oleg Sivokon},
- pdftitle={Resume},
- pdfkeywords={Resume, job, employment, cv},
- pdfsubject={My resume},
- pdfcreator={Emacs 25.0.50.1 (Org mode 8.3beta)}, 
- pdflang={English}}
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\author{Oleg Sivokon}
+\date{\today}
+\title{}
 \begin{document}
 
-\maketitle
+\makecvtitle
 
-\section{Contact Information}
-\label{sec:orgheadline1}
-\begin{center}
-\begin{tabular}{ll}
-Name: & Oleg Sivokon\\
-Birth date: & 23, 06, 1978\\
-Cell phone: & +972 (0) 544-563314\\
-Email: & \href{mailto:olegsivokon@gmail.com}{olegsivokon@gmail.com}\\
-Address: & Florentin 50, Tel Aviv, Israel\\
-\end{tabular}
-\end{center}
+\section{Technological Mastery}
+\label{sec:orgheadline7}
 
-\emph{You can find an up-to-date electronic copy of this document at}
-
-\url{https://github.com/wvxvw/resume}
-
-\clearpage
-
-\section{Technology Summary}
-\label{sec:orgheadline8}
 \subsection{Languages}
-\label{sec:orgheadline2}
+\label{sec:orgheadline1}
 ActionScript, C, Clojure, Common Lisp, Emacs Lisp, Erlang, Forth, Haskell,
 Haxe, Java, JavaScript, Mercury, OCaml, PHP, Prolog, Python, Ruby, Scala,
 Scheme, Shell.
 
 \subsection{Mathematics And Statistics}
-\label{sec:orgheadline3}
+\label{sec:orgheadline2}
 J, Julia, Maxima, Octave (Matlab), R (S).
 
 \subsection{Related Technologies}
-\label{sec:orgheadline4}
+\label{sec:orgheadline3}
 Data representation formats (XML, YAML, JSON, RDF, AMF), Graph databases,
 Network protocols (TCP, UDP, HTTP, FTP), Relational databases (SQL), Web
 stack (HTML, CSS).
 
 \subsection{Programming Environments}
-\label{sec:orgheadline5}
+\label{sec:orgheadline4}
 Eclipse, Emacs, Intellij IDEA, Vim, Visual Studio.
 
 \subsection{Operating Systems}
-\label{sec:orgheadline6}
+\label{sec:orgheadline5}
 Android, GNU/Linux, Mac OS, Microsoft Windows.
 
 \subsection{Infrastructure}
-\label{sec:orgheadline7}
+\label{sec:orgheadline6}
 Ant, Maven, Gradle, Make, Grunt, Jenkins, JIRA, Redmine, Track, Mediawiki,
 Bugzilla, Selenium, Flex Unit, JUnit, unittest (Python), 5am, Cucumber, Git,
 Subversion, Mercurial, Perforce, Bazaar.
 
-\clearpage
-
 \section{Work History}
-\label{sec:orgheadline12}
-
-\subsection{PowToon Ltd.}
-\label{sec:orgheadline9}
-\begin{description}
-\item[{Position}] \emph{Programmer}
-\item[{Term}] \emph{January 2014--May 2015}
-\item[{Accomplishments}] \(\;\)
-
-\begin{itemize}
-\item I rewrote a major application component (the player) in Haxe (compiled to
-Flash and C++).
-\item I wrote most of the infrastructure code s.a. build scripts, automated
-test generation and continuous integration server setup using Ant, Grdle
-and various utilities written in Python, s.a. Fabric.
-\item I wrote several designs for the product.
-\end{itemize}
-\end{description}
-
-\subsection{TransGaming Inc.}
-\label{sec:orgheadline10}
-\begin{description}
-\item[{Position}] \emph{Programmer}
-\item[{Term}] \emph{April 2013--2013 (less than a year)}
-\item[{Accomplishments}] \(\;\)
-
-\begin{itemize}
-\item I wrote a game portal for ``Smart TV'' deployment using TypeScript.
-\item I wrote a tester program, which stress-tested the program performance
-on ``Smart TV'' in Python.
-\item I wrote automated build for my project using Ant.
-\item I wrote a sizable chunk of code dealing with usage statistic aggregation
-based on Google Analytics in JavaScript.
-\end{itemize}
-\end{description}
-
-\subsection{Rounds}
 \label{sec:orgheadline11}
-\begin{description}
-\item[{Position}] \emph{Programmer}
-\item[{Term}] \emph{December 2010 – August 2011 (9 months)}
-\item[{Accomplishments}] \(\;\)
+
+\subsection{Programmer}
+\label{sec:orgheadline8}
+\cventry{2014--2015}{Haxe, ActionScript, Python}{PowToon Ltd}{}{}{}
 
 \begin{itemize}
-\item I rewrote the communication part of the video chat application in
-ActionScript.
-\item I wrote a testing server and utility programs for automated testing in
-Erlang.
-\item I also wrote a small natural language processing program which was used
-to advertise the company's product.
+\item Major application component (the player) in Haxe (compiled to Flash and
+C++).
+\item Infrastructure code s.a. build scripts, automated test generation and
+continuous integration server setup using Ant, Grdle and utilities written
+in Python, s.a. Fabric.
+\item Designs for the product.
 \end{itemize}
-\end{description}
+
+\newpage
+
+\subsection{Programmer}
+\label{sec:orgheadline9}
+\cventry{2013}{JavaScript, TypeScript, Python}{TransGaming Inc}{}{}{}
+
+\begin{itemize}
+\item Game portal for ``Smart TV'' using TypeScript.
+\item Performance tester program for ``Smart TV'' using Python.
+\item Automated build using Ant.
+\item Usage statistic aggregation based on Google Analytics using JavaScript.
+\end{itemize}
+
+\subsection{Programmer}
+\label{sec:orgheadline10}
+\cventry{2010--2011}{ActionScript, Erlang}{Rounds}{}{}{}
+
+\begin{itemize}
+\item Communication component of the video chat using ActionScript.
+\item Testing server and utility programs for automated testing using Erlang.
+\item Small natural language processing program for use in promotion of company's
+product.
+\end{itemize}
 
 \section{Courses}
-\label{sec:orgheadline13}
-I am a second year student at Open University of Israel.
-
-I took online courses at edX and Coursera.  The list is not exhaustive: 
+\label{sec:orgheadline12}
+\begin{description}
+\item[{Open University of Israel}] Mathematics.
+\item[{Coursera and edX}] Several MOOC classes related to programming including
 Data Scientists Toolbox, Statistics, Data Analysis, Machine Learning.
+\end{description}
 
 \section{Volunteering And Community Work}
+\label{sec:orgheadline13}
+\begin{description}
+\item[{SCons}] Plugin for building ActionScript projects.
+\item[{Adobe Community Advisory Board}] Moderator of documentation and Q/A site.
+\item[{StackExchange}] Active participant in the  Emacs Q/A site.
+\end{description}
+
+\section{Work Examples}
 \label{sec:orgheadline14}
-SCons project, ActionScript plugin.  (SCons is an extensible build system
-written in Python).
-
-For several years I was a member of Adobe Community Board.  I moderated a
-forum dedicated to Flash and ActionScript.
-
-I'm an active member of Emacs Q/A site from the StackExchange family.
-
-\section{Examples Of My Work}
-\label{sec:orgheadline15}
 My Github profile:
 \url{https://github.com/wvxvw/}.
 
 \section{Hobbies}
-\label{sec:orgheadline16}
-\begin{itemize}
-\item NLP
-\item Computational linguistics
-\item Moral philosophy
-\item General AI
-\item Graphs
-\end{itemize}
+\label{sec:orgheadline15}
+NLP, Computational linguistics, Moral philosophy, General AI, Graphs.
 \end{document}
