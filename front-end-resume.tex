@@ -1,4 +1,4 @@
-% Created 2015-10-13 Tue 21:39
+% Created 2015-10-14 Wed 10:14
 \documentclass[11pt,sans]{moderncv}
 \moderncvstyle{casual}
 \moderncvcolor{blue}
@@ -12,7 +12,7 @@
              right=62pt,
              includemp,
              scale=0.75]{geometry}
-\setlength{\parindent}{0in}
+\setlength{\parindent}{0pt}
 
 \newcounter{tmp}
 
@@ -31,12 +31,12 @@
     \vspace{1.3\baselineskip}%
     \phantomsection\addcontentsline{toc}{section}{#1}%
     \noindent\llap{\scshape\smash{\parbox[t]{%
-        \marginparwidth}{%
+        \dimexpr\marginparwidth-12pt\relax}{%
             \hyphenpenalty=10000\raggedright%
             \textcolor{color1}{\tikzmark{start-\thetmp}{\fontfamily{pag}\selectfont\textbf{#1}}\hfill\tikzmark{end-\thetmp}}}}}%
             \tikz[remember picture,overlay]
-            \draw[color1,line width=1.5pt] ([yshift=2ex, xshift=-2ex]{pic cs:end-\thetmp}|-{pic cs:start-\thetmp})
-             -- ([yshift=-1ex, xshift=-2ex]{pic cs:end-\thetmp});
+            \draw[color1,line width=1.5pt] ([yshift=2ex, xshift=-6pt]{pic cs:end-\thetmp}|-{pic cs:start-\thetmp})
+             -- ([yshift=-1ex, xshift=-6pt]{pic cs:end-\thetmp});
     \vspace{-\baselineskip}\par}
 
 \usepackage[utf8]{inputenc}
