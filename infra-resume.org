@@ -1,0 +1,127 @@
+# -*- org-odt-preferred-output-format: "docx" -*
+
+#+TITLE:
+#+AUTHOR:    Oleg Sivokon
+#+EMAIL:     olegsivokon@gmail.com
+#+DATE:      <2017-02-23>
+#+DESCRIPTION: My resume
+#+KEYWORDS: Resume, job, employment, cv
+#+OPTIONS: toc:nil title:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage[a4paper, total={7in, 9in}]{geometry}
+#+LaTeX_HEADER: \renewcommand*\familydefault{\sfdefault}
+
+#+BEGIN_CENTER
+Oleg Sivokon
+
+Born June 23, 1978
+
++972 (0) 544-563314
+
+mailto:olegsivokon@gmail.com
+
+Eilat 13, Apt. 5, Givatayim, Israel \\[18pt]
+
+\small /You can find an up-to-date electronic resume at/
+  
+https://github.com/wvxvw/resume \\[48pt]
+#+END_CENTER
+
+* Technology Skills
+** Languages
+   My current work is in Go, Python and Bash.
+   
+   Expert in JavaScript and various related technologies such as
+   ActionScript, TypeScript, CSS and HTML.
+
+   Also programmed in Java and PHP several years ago.
+
+   Expert in Common Lisp, and Prolog.  Some knowledge of Clojure.
+
+   Wrote several Emacs Lisp packages.
+
+** Programming Environment
+   In my current job, I work extensively with Linux, Docker and
+   VCenter.  I am proficient with variety of build systems, several
+   databases, and various UNIX tools needed to maintain infrastructure
+   of a big programming workshop running.  I set up and run Jenkins
+   jobs, Elastic Search tools, Docker Registry and Etcd distributed
+   database.
+
+   I have substantial knowledge of Git and of a variety of tools that
+   aid in writing quality code such as linters, unit test frameworks,
+   formatters etc.
+
+   Recently, I had to work with numerical and statistical Python
+   packages: NumPy, Pandas and Dask.  I also have experience working
+   with popular Python frameworks: Django, Tornado, Celery.
+
+* Work History
+
+** AllAspect
+   + Programmer :: April 2017--August 2017
+     - Wrote tools for automatic trading in digital media market.
+     - Wrote tools for reporting, representing and processing of
+       statistical data.
+
+** Elastifile
+   + Programmer :: December 2015--April 2017
+     - Rewrote the build system of the infrastructure part of the
+       project.
+     - Wrote NFS client for testing the company's product.
+     - Wrote ``glue'' code that allowed automated testing code to
+       interface with system code.
+
+** PowToon Ltd.
+   + Programmer :: January 2014--May 2015
+     - Rewrote the major application component (the player).
+     - Wrote most of the infrastructure code such as build scripts,
+       automated test generation and continuous integration server
+       setup.
+     - Wrote several designs for the product.
+   
+** TransGaming Inc.
+   + Programmer :: April 2013--2013
+     - Wrote a game portal for ``Smart TV'' deployment.
+     - Wrote a tester program, which stress-tested the program
+       performance on ``Smart TV''.
+     - Wrote automated build for my project.
+     - Wrote a sizable chunk of code dealing with usage statistic
+       aggregation using Google Analytics.
+
+** Rounds
+   + Programmer :: December 2010--August 2011
+     - Rewrote the communication part of the video chat application.
+     - Wrote a testing server and utility programs for automated
+       testing.
+     - Wrote a natural language processing program which was used
+       to advertise the company's product.
+   
+* University Level Courses
+  Data Scientist's Toolbox (statistics in R), Statistics, Data
+  Analysis, Machine Learning, Artificial Intelligence.
+
+* Volunteering And Community Work
+  SCons project, ActionScript plugin.  (SCons is an extensible build system
+  written in Python).
+
+  For several years I was a member of Adobe Community Board. I moderated a forum
+  dedicated to Flash and ActionScript as well as writing some articles such as
+  this one: http://kb2.adobe.com/community/publishing/526/cpsid_52670.html
+
+  I'm an active member of Emacs Q/A site from the StackExchange family.
+
+* Examples Of My Work
+  My Github profile:
+  https://github.com/wvxvw/.
+
+* Languages
+  Fluent in English, Hebrew, Russian.
+
+* Hobbies
+  NLP, Computational linguistics, Moral philosophy, General AI, Graphs.
+
+* Citizenship and Mobility
+  Citizen of Israel and Ukraine.  USA citizenship pending.  Willing
+  to relocate.
