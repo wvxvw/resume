@@ -32,22 +32,19 @@ https://github.com/wvxvw/resume \\[48pt]
 ** Languages
    My current work is in Go, Python and Bash.
    
-   Expert in JavaScript and various related technologies such as
-   ActionScript, TypeScript, CSS and HTML.
-
-   Also programmed in Java and PHP several years ago.
+   Other languages I programmed in: Java, C, JavaScript, Erlang.
 
    Expert in Common Lisp, and Prolog.  Some knowledge of Clojure.
 
    Wrote several Emacs Lisp packages.
 
 ** Programming Environment
-   In my current job, I work extensively with Linux, Docker and
-   VCenter.  I am proficient with variety of build systems, several
-   databases, and various UNIX tools needed to maintain infrastructure
-   of a big programming workshop running.  I set up and run Jenkins
-   jobs, Elastic Search tools, Docker Registry and Etcd distributed
-   database.
+   In my current job, I work extensively with Linux, Docker,
+   Kubernetes, Apache Kafka and VCenter.  I am proficient with variety
+   of build systems, several databases, and various UNIX tools needed
+   to maintain infrastructure of a big programming workshop running.
+   I set up and run Jenkins jobs, Elastic Search tools, Docker
+   Registry and Etcd distributed database.
 
    I have substantial knowledge of Git and of a variety of tools that
    aid in writing quality code such as linters, unit test frameworks,
@@ -55,9 +52,14 @@ https://github.com/wvxvw/resume \\[48pt]
 
    Recently, I had to work with numerical and statistical Python
    packages: NumPy, Pandas and Dask.  I also have experience working
-   with popular Python frameworks: Django, Tornado, Celery.
+   with popular Python frameworks: Django, Tornado, Pytest.
 
 * Work History
+
+** NEX Traiana
+   + Programmer :: August 2017--present
+     - Wrote tools for automating microservice deployment, debugging
+       and testing.
 
 ** AllAspect
    + Programmer :: April 2017--August 2017
@@ -114,7 +116,8 @@ https://github.com/wvxvw/resume \\[48pt]
 
 * Examples Of My Work
   My Github profile:
-  https://github.com/wvxvw/.
+  - https://github.com/wvxvw/.
+  - https://github.com/wvxvw-traiana/.
 
 * Languages
   Fluent in English, Hebrew, Russian.
