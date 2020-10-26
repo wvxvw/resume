@@ -32,14 +32,15 @@ Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
 
 * Technology Skills
   The company I currently work for: Replix.IO, develops a storage
-  product, specifically, a long-distance online zero-RTO replication
-  software.  While we plan to expand to object store and, perhaps,
-  replication of popular databases, at present, the product works with
-  block device level storage.  The product is designed to be used on
-  public cloud, however, we also rent some POPs outside of that
-  domain.  Given this background, my expertise is in the cloud
-  storage, using Linux together with some popular related technologies
-  and products s.a. Docker, SPDK, Consul, Prometheus etc.
+  product, specifically, a long-distance online zero-RTO (Recovery
+  Time Objective) replication software.  While we plan to expand to
+  object store and, perhaps, replication of popular databases, at
+  present, the product works with block device level storage.  The
+  product is designed to be used on public cloud, however, there's a
+  plan to extend the service to on-premise installations.  Given this
+  background, my expertise is in the cloud storage, using Linux
+  together with some popular related technologies and products
+  s.a. Docker, SPDK, Consul, Prometheus etc.
 
   The product itself is written in Rust, but automation code is almost
   entirely written in Python.  Automation code needs to interface with
