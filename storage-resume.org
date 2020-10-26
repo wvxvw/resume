@@ -1,0 +1,155 @@
+# -*- org-odt-preferred-output-format: "docx" -*
+
+#+TITLE:
+#+AUTHOR:    Oleg Sivokon
+#+EMAIL:     olegsivokon@gmail.com
+#+DATE:      <2019-07-24 Wed>
+#+DESCRIPTION: My resume
+#+KEYWORDS: Resume, job, employment, cv
+#+OPTIONS: toc:nil title:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage[a4paper, total={7in, 9in}]{geometry}
+#+LaTeX_HEADER: \renewcommand*\familydefault{\sfdefault}
+#+LaTeX_HEADER: \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta,urlcolor=cyan}
+#+LaTeX_HEADER: \urlstyle{same}
+
+\begin{center}
+Oleg Sivokon
+
+Born June 23, 1978
+
++972 (0) 544-563314
+
+\url{mailto:olegsivokon@gmail.com}
+
+Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
+
+\small \emph{You can find an up-to-date electronic resume at}
+
+\url{https://github.com/wvxvw/resume} \\[48pt]
+\end{center}
+
+* Technology Skills
+  The company I currently work for: Replix.IO, develops a storage
+  product, specifically, a long-distance online zero-RTO replication
+  software.  While we plan to expand to object store and, perhaps,
+  replication of popular databases, at present, the product works with
+  block device level storage.  The product is designed to be used on
+  public cloud, however, we also rent some POPs outside of that
+  domain.  Given this background, my expertise is in the cloud
+  storage, using Linux together with some popular related technologies
+  and products s.a. Docker, SPDK, Consul, Prometheus etc.
+
+  The product itself is written in Rust, but automation code is almost
+  entirely written in Python.  Automation code needs to interface with
+  tools like Terraform on one hand and the typical development stack
+  s.a. Git, JIRA, Gitlab etc.
+
+  Automation tools rely on ZMQ for communication, Behave for test
+  harness.  We've developed a test deployment tool in-house to extends
+  Wheel format for Python packages in order to deploy the tests.  We
+  are now experimenting with property-based testing and fuzzing.
+
+  We use some third-party testing tools s.a. SysBench and DBT2 in our
+  tests as well as a lot of usual Linux tooling, like FIO, SAR, and
+  tools that come with popular storage products like =pgbench= and
+  =cassandra-stress=.
+
+** Previous experience
+   Before working for Replix.IO, I worked with another storage
+   product: Elastifile distributed file system (created by
+   Elastifile).  I worked on a large infrastructure project mostly
+   written in Go, which used some popular third-party tools for
+   testing, FIO, FSF2008, FSF2012, VDBench among others.  Since this
+   was before Docker Swarm, while Kubernetes was in its infancy, a lot
+   of infrastructure code was dedicated to container management.
+
+   Another part of this project was about integration with VMWare's
+   VCenter, which was considered the primary target for the product.
+
+** Non-work-related (programming) skills
+   I like Lisp and Prolog.  I have decent knowledge of Common Lisp.
+   I'm very enthusiastic about Mercury.  I know Emacs Lisp fairly
+   well.  I help my wife with statistical programming in Python using
+   Pandas, Pill and other popular data-science software.
+
+* Work History
+
+** Replix.IO
+   + Programmer :: August 2018--present
+     - Wrote tools for automating company's product testing as well as
+       automating development process.
+
+** NEX Traiana
+   + Programmer :: August 2017--August 2018
+     - Wrote tools for automating microservice deployment, debugging
+       and testing.
+
+** AllAspect
+   + Programmer :: April 2017--August 2017
+     - Wrote tools for automatic trading in digital media market.
+     - Wrote tools for reporting, representing and processing of
+       statistical data.
+
+** Elastifile
+   + Programmer :: December 2015--April 2017
+     - Rewrote the build system of the infrastructure part of the
+       project.
+     - Wrote NFS client for testing the company's product.
+     - Wrote ``glue'' code that allowed automated testing code to
+       interface with system code.
+
+** PowToon Ltd.
+   + Programmer :: January 2014--May 2015
+     - Rewrote the major application component (the player).
+     - Wrote most of the infrastructure code such as build scripts,
+       automated test generation and continuous integration server
+       setup.
+     - Wrote several designs for the product.
+   
+** TransGaming Inc.
+   + Programmer :: April 2013--2013
+     - Wrote a game portal for ``Smart TV'' deployment.
+     - Wrote a tester program, which stress-tested the program
+       performance on ``Smart TV''.
+     - Wrote automated build for my project.
+     - Wrote a sizable chunk of code dealing with usage statistic
+       aggregation using Google Analytics.
+
+** Rounds
+   + Programmer :: December 2010--August 2011
+     - Rewrote the communication part of the video chat application.
+     - Wrote a testing server and utility programs for automated
+       testing.
+     - Wrote a natural language processing program which was used
+       to advertise the company's product.
+   
+* University Level Courses
+  Data Scientist's Toolbox (statistics in R), Statistics, Data
+  Analysis, Machine Learning, Artificial Intelligence.
+
+* Volunteering And Community Work
+  SCons project, ActionScript plugin.  (SCons is an extensible build system
+  written in Python).
+
+  For several years I was a member of Adobe Community Board. I moderated a forum
+  dedicated to Flash and ActionScript as well as writing some articles such as
+  this one: http://kb2.adobe.com/community/publishing/526/cpsid_52670.html
+
+  I'm an active member of Emacs Q/A site from the StackExchange family.
+
+* Examples Of My Work
+  My Github profile:
+  - https://github.com/wvxvw/.
+  - https://github.com/wvxvw-traiana/.
+
+* Languages
+  Fluent in English, Hebrew, Russian.
+
+* Hobbies
+  NLP, Computational linguistics, Moral philosophy, General AI, Graphs.
+
+* Citizenship and Mobility
+  Citizen of Israel and Ukraine.  USA citizenship pending.  Willing
+  to relocate.

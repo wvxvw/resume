@@ -1,0 +1,221 @@
+% Created 2019-07-24 Wed 22:20
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\renewcommand*\familydefault{\sfdefault}
+\hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta,urlcolor=cyan}
+\urlstyle{same}
+\author{Oleg Sivokon}
+\date{\textit{<2019-07-24 Wed>}}
+\title{}
+\hypersetup{
+ pdfauthor={Oleg Sivokon},
+ pdftitle={},
+ pdfkeywords={Resume, job, employment, cv},
+ pdfsubject={My resume},
+ pdfcreator={Emacs 26.2 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\begin{center}
+Oleg Sivokon
+
+Born June 23, 1978
+
++972 (0) 544-563314
+
+\url{mailto:olegsivokon@gmail.com}
+
+Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
+
+\small \emph{You can find an up-to-date electronic resume at}
+
+\url{https://github.com/wvxvw/resume} \\[48pt]
+\end{center}
+
+\section*{Technology Skills}
+\label{sec:orge525f21}
+The company I currently work for: Replix.IO, develops a storage
+product, specifically, a long-distance online zero-RTO replication
+software.  While we plan to expand to object store and, perhaps,
+replication of popular databases, at present, the product works with
+block device level storage.  The product is designed to be used on
+public cloud, however, we also rent some POPs outside of that
+domain.  Given this background, my expertise is in the cloud
+storage, using Linux together with some popular related technologies
+and products s.a. Docker, SPDK, Consul, Prometheus etc.
+
+The product itself is written in Rust, but automation code is almost
+entirely written in Python.  Automation code needs to interface with
+tools like Terraform on one hand and the typical development stack
+s.a. Git, JIRA, Gitlab etc.
+
+Automation tools rely on ZMQ for communication, Behave for test
+harness.  We've developed a test deployment tool in-house to extends
+Wheel format for Python packages in order to deploy the tests.  We
+are now experimenting with property-based testing and fuzzing.
+
+We use some third-party testing tools s.a. SysBench and DBT2 in our
+tests as well as a lot of usual Linux tooling, like FIO, SAR, and
+tools that come with popular storage products like \texttt{pgbench} and
+\texttt{cassandra-stress}.
+
+\subsection*{Previous experience}
+\label{sec:org419ecbe}
+Before working for Replix.IO, I worked with another storage
+product: Elastifile distributed file system (created by
+Elastifile).  I worked on a large infrastructure project mostly
+written in Go, which used some popular third-party tools for
+testing, FIO, FSF2008, FSF2012, VDBench among others.  Since this
+was before Docker Swarm, while Kubernetes was in its infancy, a lot
+of infrastructure code was dedicated to container management.
+
+Another part of this project was about integration with VMWare's
+VCenter, which was considered the primary target for the product.
+
+\subsection*{Non-work-related (programming) skills}
+\label{sec:org3315baf}
+I like Lisp and Prolog.  I have decent knowledge of Common Lisp.
+I'm very enthusiastic about Mercury.  I know Emacs Lisp fairly
+well.  I help my wife with statistical programming in Python using
+Pandas, Pill and other popular data-science software.
+
+\section*{Work History}
+\label{sec:org2098b9e}
+
+\subsection*{Replix.IO}
+\label{sec:orgcbd246b}
+\begin{description}
+\item[{Programmer}] August 2018--present
+\begin{itemize}
+\item Wrote tools for automating company's product testing as well as
+automating development process.
+\end{itemize}
+\end{description}
+
+\subsection*{NEX Traiana}
+\label{sec:orgd952e8b}
+\begin{description}
+\item[{Programmer}] August 2017--August 2018
+\begin{itemize}
+\item Wrote tools for automating microservice deployment, debugging
+and testing.
+\end{itemize}
+\end{description}
+
+\subsection*{AllAspect}
+\label{sec:orgc9d5d73}
+\begin{description}
+\item[{Programmer}] April 2017--August 2017
+\begin{itemize}
+\item Wrote tools for automatic trading in digital media market.
+\item Wrote tools for reporting, representing and processing of
+statistical data.
+\end{itemize}
+\end{description}
+
+\subsection*{Elastifile}
+\label{sec:orgb410108}
+\begin{description}
+\item[{Programmer}] December 2015--April 2017
+\begin{itemize}
+\item Rewrote the build system of the infrastructure part of the
+project.
+\item Wrote NFS client for testing the company's product.
+\item Wrote ``glue'' code that allowed automated testing code to
+interface with system code.
+\end{itemize}
+\end{description}
+
+\subsection*{PowToon Ltd.}
+\label{sec:org245ffde}
+\begin{description}
+\item[{Programmer}] January 2014--May 2015
+\begin{itemize}
+\item Rewrote the major application component (the player).
+\item Wrote most of the infrastructure code such as build scripts,
+automated test generation and continuous integration server
+setup.
+\item Wrote several designs for the product.
+\end{itemize}
+\end{description}
+
+\subsection*{TransGaming Inc.}
+\label{sec:org845d466}
+\begin{description}
+\item[{Programmer}] April 2013--2013
+\begin{itemize}
+\item Wrote a game portal for ``Smart TV'' deployment.
+\item Wrote a tester program, which stress-tested the program
+performance on ``Smart TV''.
+\item Wrote automated build for my project.
+\item Wrote a sizable chunk of code dealing with usage statistic
+aggregation using Google Analytics.
+\end{itemize}
+\end{description}
+
+\subsection*{Rounds}
+\label{sec:orgd2277e7}
+\begin{description}
+\item[{Programmer}] December 2010--August 2011
+\begin{itemize}
+\item Rewrote the communication part of the video chat application.
+\item Wrote a testing server and utility programs for automated
+testing.
+\item Wrote a natural language processing program which was used
+to advertise the company's product.
+\end{itemize}
+\end{description}
+
+\section*{University Level Courses}
+\label{sec:orgd4266a3}
+Data Scientist's Toolbox (statistics in R), Statistics, Data
+Analysis, Machine Learning, Artificial Intelligence.
+
+\section*{Volunteering And Community Work}
+\label{sec:orgd192044}
+SCons project, ActionScript plugin.  (SCons is an extensible build system
+written in Python).
+
+For several years I was a member of Adobe Community Board. I moderated a forum
+dedicated to Flash and ActionScript as well as writing some articles such as
+this one: \url{http://kb2.adobe.com/community/publishing/526/cpsid\_52670.html}
+
+I'm an active member of Emacs Q/A site from the StackExchange family.
+
+\section*{Examples Of My Work}
+\label{sec:org92831ab}
+My Github profile:
+\begin{itemize}
+\item \url{https://github.com/wvxvw/}.
+\item \url{https://github.com/wvxvw-traiana/}.
+\end{itemize}
+
+\section*{Languages}
+\label{sec:org8348956}
+Fluent in English, Hebrew, Russian.
+
+\section*{Hobbies}
+\label{sec:orgd9edeaf}
+NLP, Computational linguistics, Moral philosophy, General AI, Graphs.
+
+\section*{Citizenship and Mobility}
+\label{sec:org805bc4c}
+Citizen of Israel and Ukraine.  USA citizenship pending.  Willing
+to relocate.
+\end{document}
