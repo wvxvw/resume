@@ -23,7 +23,7 @@ Born June 23, 1978
 
 \url{mailto:olegsivokon@gmail.com}
 
-Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
+Byalik 152, Apt. 16, Ramat Gan, Israel \\[18pt]
 
 \small \emph{You can find an up-to-date electronic resume at}
 
@@ -31,26 +31,23 @@ Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
 \end{center}
 
 * Technology Skills
-  The company I currently work for: Replix.IO, develops a storage
-  product, specifically, a long-distance online zero-RTO (Recovery
-  Time Objective) replication software.  While we plan to expand to
-  object store and, perhaps, replication of popular databases, at
-  present, the product works with block device level storage.  The
-  product is designed to be used on public cloud, however, there's a
-  plan to extend the service to on-premise installations.  Given this
-  background, my expertise is in the cloud storage, using Linux
-  together with some popular related technologies and products
-  s.a. Docker, SPDK, Consul, Prometheus etc.
+  My latest employer, Replix.IO, develops a storage product,
+  specifically, a long-distance online zero-RTO (Recovery Time
+  Objective) replication software.  The product evolved and so did the
+  company.  It started as an on-premise installation product and
+  transormed into a service offered through public cloud providers
+  such as AWS, Azure or GCP.  Today, the product is offered as a CSI
+  plugin for Kubernetes.  The product utilizes a lot of modern
+  technologies, Docker, Kubernetes, SPDK, Prometheus, Terraform, among
+  others.
 
-  The product itself is written in Rust, but automation code is almost
-  entirely written in Python.  Automation code needs to interface with
-  tools like Terraform on one hand and the typical development stack
-  s.a. Git, JIRA, Gitlab etc.
+  The core of the product is written in Rust, the Kubernetes-facing
+  part is written in Go, but automation code is almost entirely
+  written in Python.
 
   Automation tools rely on ZMQ for communication, Behave for test
   harness.  We've developed a test deployment tool in-house to extends
-  Wheel format for Python packages in order to deploy the tests.  We
-  are now experimenting with property-based testing and fuzzing.
+  Wheel format for Python packages in order to deploy the tests.
 
   We use some third-party testing tools s.a. SysBench and DBT2 in our
   tests as well as a lot of usual Linux tooling, like FIO, SAR, and
@@ -126,6 +123,19 @@ Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
      - Wrote a natural language processing program which was used
        to advertise the company's product.
    
+* Education
+  - Ukrainian Academy of Printing :: Lviv, Ukraine, 1995-1999.  Fine
+       and Applied Art.  At the time, UAoP did not offer a batchelors
+       degree.  I did not complete masters degree, however.
+  - Bezalel Academy of Art and Design :: Jerusalem, Israel, 2000-2002.
+       Visual Communication.  I attempted to transfer from UAoP, but
+       since Bezalel at the time did not offer masters degree,
+       eventually, I dropped out, as my goal was a terminatory degree.
+  - Open University of Israel :: No campus, 2014-2018.  Joint
+       Mathematics and Computer Science program.  This university is
+       for full-time workers, designed to study remotely or in the
+       evening hours.  Technically, I'm still a student there, but I
+       did not sign up for any course in a few years.
 * University Level Courses
   Data Scientist's Toolbox (statistics in R), Statistics, Data
   Analysis, Machine Learning, Artificial Intelligence.
@@ -138,12 +148,11 @@ Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
   dedicated to Flash and ActionScript as well as writing some articles such as
   this one: http://kb2.adobe.com/community/publishing/526/cpsid_52670.html
 
-  I'm an active member of Emacs Q/A site from the StackExchange family.
+  I'm an active member of Emacs Q&A site from the StackExchange family.
 
 * Examples Of My Work
   My Github profile:
   - https://github.com/wvxvw/.
-  - https://github.com/wvxvw-traiana/.
 
 * Languages
   Fluent in English, Hebrew, Russian.

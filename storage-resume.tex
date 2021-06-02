@@ -1,4 +1,4 @@
-% Created 2020-10-26 Mon 08:25
+% Created 2021-06-02 Wed 21:02
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,7 +14,6 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\usepackage[utf8]{inputenc}
 \usepackage[scaled]{helvet}
 \usepackage[a4paper, total={7in, 9in}]{geometry}
 \renewcommand*\familydefault{\sfdefault}
@@ -28,7 +27,7 @@
  pdftitle={},
  pdfkeywords={Resume, job, employment, cv},
  pdfsubject={My resume},
- pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
  pdflang={English}}
 \begin{document}
 
@@ -41,7 +40,7 @@ Born June 23, 1978
 
 \url{mailto:olegsivokon@gmail.com}
 
-Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
+Byalik 152, Apt. 16, Ramat Gan, Israel \\[18pt]
 
 \small \emph{You can find an up-to-date electronic resume at}
 
@@ -49,27 +48,24 @@ Moshe Sharet 13, Apt. 5, Petah Tikva, Israel \\[18pt]
 \end{center}
 
 \section*{Technology Skills}
-\label{sec:org6fc0f09}
-The company I currently work for: Replix.IO, develops a storage
-product, specifically, a long-distance online zero-RTO (Recovery
-Time Objective) replication software.  While we plan to expand to
-object store and, perhaps, replication of popular databases, at
-present, the product works with block device level storage.  The
-product is designed to be used on public cloud, however, there's a
-plan to extend the service to on-premise installations.  Given this
-background, my expertise is in the cloud storage, using Linux
-together with some popular related technologies and products
-s.a. Docker, SPDK, Consul, Prometheus etc.
+\label{sec:org3c97984}
+My latest employer, Replix.IO, develops a storage product,
+specifically, a long-distance online zero-RTO (Recovery Time
+Objective) replication software.  The product evolved and so did the
+company.  It started as an on-premise installation product and
+transormed into a service offered through public cloud providers
+such as AWS, Azure or GCP.  Today, the product is offered as a CSI
+plugin for Kubernetes.  The product utilizes a lot of modern
+technologies, Docker, Kubernetes, SPDK, Prometheus, Terraform, among
+others.
 
-The product itself is written in Rust, but automation code is almost
-entirely written in Python.  Automation code needs to interface with
-tools like Terraform on one hand and the typical development stack
-s.a. Git, JIRA, Gitlab etc.
+The core of the product is written in Rust, the Kubernetes-facing
+part is written in Go, but automation code is almost entirely
+written in Python.
 
 Automation tools rely on ZMQ for communication, Behave for test
 harness.  We've developed a test deployment tool in-house to extends
-Wheel format for Python packages in order to deploy the tests.  We
-are now experimenting with property-based testing and fuzzing.
+Wheel format for Python packages in order to deploy the tests.
 
 We use some third-party testing tools s.a. SysBench and DBT2 in our
 tests as well as a lot of usual Linux tooling, like FIO, SAR, and
@@ -77,7 +73,7 @@ tools that come with popular storage products like \texttt{pgbench} and
 \texttt{cassandra-stress}.
 
 \subsection*{Previous experience}
-\label{sec:org4954efe}
+\label{sec:org9f75cdb}
 Before working for Replix.IO, I worked with another storage
 product: Elastifile distributed file system (created by
 Elastifile).  I worked on a large infrastructure project mostly
@@ -90,17 +86,17 @@ Another part of this project was about integration with VMWare's
 VCenter, which was considered the primary target for the product.
 
 \subsection*{Non-work-related (programming) skills}
-\label{sec:orgf41e480}
+\label{sec:orga03ed75}
 I like Lisp and Prolog.  I have decent knowledge of Common Lisp.
 I'm very enthusiastic about Mercury.  I know Emacs Lisp fairly
 well.  I help my wife with statistical programming in Python using
 Pandas, Pill and other popular data-science software.
 
 \section*{Work History}
-\label{sec:orgafc8592}
+\label{sec:org66e1213}
 
 \subsection*{Replix.IO}
-\label{sec:orgaaa5cfc}
+\label{sec:org03bc47a}
 \begin{description}
 \item[{Programmer}] August 2018--present
 \begin{itemize}
@@ -110,7 +106,7 @@ automating development process.
 \end{description}
 
 \subsection*{NEX Traiana}
-\label{sec:org122a562}
+\label{sec:org2b7cd1a}
 \begin{description}
 \item[{Programmer}] August 2017--August 2018
 \begin{itemize}
@@ -120,7 +116,7 @@ and testing.
 \end{description}
 
 \subsection*{AllAspect}
-\label{sec:orgc5d0d6b}
+\label{sec:org8c8d6be}
 \begin{description}
 \item[{Programmer}] April 2017--August 2017
 \begin{itemize}
@@ -131,7 +127,7 @@ statistical data.
 \end{description}
 
 \subsection*{Elastifile}
-\label{sec:orgcfe466a}
+\label{sec:org1ab5aca}
 \begin{description}
 \item[{Programmer}] December 2015--April 2017
 \begin{itemize}
@@ -144,7 +140,7 @@ interface with system code.
 \end{description}
 
 \subsection*{PowToon Ltd.}
-\label{sec:orgaa5b880}
+\label{sec:orgbf4c069}
 \begin{description}
 \item[{Programmer}] January 2014--May 2015
 \begin{itemize}
@@ -157,7 +153,7 @@ setup.
 \end{description}
 
 \subsection*{TransGaming Inc.}
-\label{sec:orgd774a53}
+\label{sec:org5f27731}
 \begin{description}
 \item[{Programmer}] April 2013--2013
 \begin{itemize}
@@ -171,7 +167,7 @@ aggregation using Google Analytics.
 \end{description}
 
 \subsection*{Rounds}
-\label{sec:org8e60932}
+\label{sec:org0c41e5b}
 \begin{description}
 \item[{Programmer}] December 2010--August 2011
 \begin{itemize}
@@ -183,13 +179,29 @@ to advertise the company's product.
 \end{itemize}
 \end{description}
 
+\section*{Education}
+\label{sec:orge29bc54}
+\begin{description}
+\item[{Ukrainian Academy of Printing}] Lviv, Ukraine, 1995-1999.  Fine
+and Applied Art.  At the time, UAoP did not offer a batchelors
+degree.  I did not complete masters degree, however.
+\item[{Bezalel Academy of Art and Design}] Jerusalem, Israel, 2000-2002.
+Visual Communication.  I attempted to transfer from UAoP, but
+since Bezalel at the time did not offer masters degree,
+eventually, I dropped out, as my goal was a terminatory degree.
+\item[{Open University of Israel}] No campus, 2014-2018.  Joint
+Mathematics and Computer Science program.  This university is
+for full-time workers, designed to study remotely or in the
+evening hours.  Technically, I'm still a student there, but I
+did not sign up for any course in a few years.
+\end{description}
 \section*{University Level Courses}
-\label{sec:org5de856e}
+\label{sec:org5b3c00d}
 Data Scientist's Toolbox (statistics in R), Statistics, Data
 Analysis, Machine Learning, Artificial Intelligence.
 
 \section*{Volunteering And Community Work}
-\label{sec:org609ba34}
+\label{sec:org40dc152}
 SCons project, ActionScript plugin.  (SCons is an extensible build system
 written in Python).
 
@@ -197,26 +209,25 @@ For several years I was a member of Adobe Community Board. I moderated a forum
 dedicated to Flash and ActionScript as well as writing some articles such as
 this one: \url{http://kb2.adobe.com/community/publishing/526/cpsid\_52670.html}
 
-I'm an active member of Emacs Q/A site from the StackExchange family.
+I'm an active member of Emacs Q\&A site from the StackExchange family.
 
 \section*{Examples Of My Work}
-\label{sec:org13b7d06}
+\label{sec:orgb3bfb47}
 My Github profile:
 \begin{itemize}
 \item \url{https://github.com/wvxvw/}.
-\item \url{https://github.com/wvxvw-traiana/}.
 \end{itemize}
 
 \section*{Languages}
-\label{sec:org1f05802}
+\label{sec:org0af72b4}
 Fluent in English, Hebrew, Russian.
 
 \section*{Hobbies}
-\label{sec:org3f4b02a}
+\label{sec:org4293289}
 NLP, Computational linguistics, Moral philosophy, General AI, Graphs.
 
 \section*{Citizenship and Mobility}
-\label{sec:orgd654cb1}
+\label{sec:org54fcc7e}
 Citizen of Israel and Ukraine.  USA citizenship pending.  Willing
 to relocate.
 \end{document}
